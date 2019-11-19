@@ -97,6 +97,10 @@ body {
     margin-right: 5px;
 }
 
+.fa-globe {
+    margin-right: 5px;
+}
+
 @media only screen and (max-width: 980px) {
     .top-nav-bar {
         height: 118px;
@@ -117,7 +121,7 @@ body {
     }
 
     .menu-bar ul li {
-        height: 57px;
+        height: 70px;
         width: 100%;
     }
 }
