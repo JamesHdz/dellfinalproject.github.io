@@ -386,13 +386,40 @@ body {
     background-color: #ccc;
 }
 
-.footer-image img {
-    width: 150px;
-}
 
 .footer .row .fab {
     padding-right: 20px;
     font-size: 15px;
+}
+
+.footer input{
+    height: 40px;
+    width: 210px;
+    background: transparent !important;
+}
+
+.footer .form-control {
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 2px !important;
+    border-color: #00447C;
+}
+
+
+.footer .btn-outline-primary {
+    background: white;
+    color: #00447C;
+    font-size: 15px;
+    margin-left: 40px;
+    border: #00447C;
+    box-shadow: none !important;
+    text-transform: capitalize !important;
+    width: 120px;
+    height: 40px;
+}
+
+#email-row {
+    margin-top: 30px;
 }
 
 /*--------------------------Single-Product--------------------------*/
@@ -456,3 +483,4 @@ body {
 .product-description hr {
     margin-bottom: 50px;
 }
+
