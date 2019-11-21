@@ -4,6 +4,7 @@
 }
 
 .view {
+    margin-top: 75px;
     background: url("../images/VisorHeader.png") no-repeat center center;
     background-size: cover;
 }
