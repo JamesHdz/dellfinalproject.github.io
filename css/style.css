@@ -3,22 +3,32 @@
     padding: 0;
 }
 
-/*--------------------------Top-Nav--------------------------*/
+.view {
+    background: url("../images/3D-dell-visor.jpg") no-repeat center center;
+    background-size: cover;
+}
 
 body {
     background-color: #f1f3f4;
     font-family: sans-serif;
 }
 
-.top-nav-bar {
-    height: 57px;
-    top: 0;
-    position: sticky;
-    background: #333;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #00447C;
-    /* padding: 0 25px; */
-    z-index: 2;
+html,
+body,
+header,
+.view {
+  height: 90%;
+}
+
+/*--------------------------Main Navigation--------------------------*/
+
+.navbar {
+    z-index: 1;
+    background-color: #333;
+}
+
+.nav-item a {
+    color: white !important;
 }
 
 .logo {
@@ -28,7 +38,7 @@ body {
 
 .form-control {
     margin-top: 9px;
-    margin-left: 30px;
+    margin-left: 200px;
     border: 1px solid #00447C;
     border-top-left-radius: 10px !important;
     border-bottom-left-radius: 10px !important;
@@ -63,18 +73,19 @@ body {
 }
 
 .menu-bar {
-    width: 40%;
+    /* width: 40%; */
     height: 57px;
     float: right;
 }
 
 .menu-bar ul {
+    height: 57px;
     display: inline-flex;
     float: right;
 }
 
 .menu-bar ul li {
-    border-left: 1px solid #fff;
+    /* border-left: 1px solid #fff; */
     list-style-type: none;
     padding: 15px 35px;
     text-align: center;
@@ -84,9 +95,18 @@ body {
 
 .menu-bar ul li a {
     font-size: 16px;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #fff;
     text-decoration: none;
+}
+
+.btn-outline-primary {
+    display: inline-flex;
+    text-align: center;
+    border: 1px solid white !important;
+    color: white !important;
+    border-radius: 3px !important;
+    margin: 0px !important;
 }
 
 .fa-shopping-cart {
@@ -102,13 +122,13 @@ body {
 }
 
 @media only screen and (max-width: 980px) {
-    .top-nav-bar {
-        height: 118px;
+    .nav-bar {
+        height: 180px;
         border-bottom: 0;
     }
 
     .search-box {
-        width: 100%
+        width: 100%;
     }
 
     .menu-bar {
@@ -126,234 +146,80 @@ body {
     }
 }
 
-/*--------------------------Side-Menu--------------------------*/
-
-.side-menu {
-    height: 79%;
-    width: 15%;
-    font-size: 14px;
-    float: left;
-    z-index: 2;
-    background-color: #ddd;
+.btn-outline-primary {
+    display: inline-flex;
+    text-align: center;
+    border: 1px solid white !important;
+    color: white !important;
+    border-radius: 3px !important;
+    margin: 0px !important;
 }
 
-.side-menu ul {
-    margin-left: 10px;
+/*--------------------------Masonry Featured Products--------------------------*/
+
+// Within style tags in your html file
+* { box-sizing: border-box; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
-.side-menu ul li {
-    list-style-type: none;
-    font-weight: bold;
-    margin-top: 10px;
-    cursor: pointer;
+.grid-sizer,
+.grid-item {
+  width: 50%;
 }
-
-.side-menu ul li:hover {
-    color: orange;
-}
-
-.side-menu ul li ul {
-    display: none;
-    z-index: 10;
-    top: 77px;
-}
-
-.side-menu ul li:hover ul {
-    display: block;
-    height: 400px;
-    margin-left: 14%;
-    padding: 0 100px 10px 10px;
-    position: fixed;
-    background: #ececec;
-    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
-}
-
-.fa-angle-right {
-    margin-top: 4px;
-    margin-right: 8px;
-    float: right;
-}
-
-#menu-btn,
-#close-btn {
-    font-size: 30px;
-    margin: 10px;
-    color: #00447C;
-    display: none;
-}
-
-@media only screen and (max-width: 980px) {
-    .side-menu {
-        width: 34%;
-        z-index: 20;
-        top: 133px;
-        position: fixed;
-        font-size: 12px;
-        display: none;
-    }
-
-    /* .menu-bar {
-        display: none;
-    } */
-
-    .side-menu ul li ul {
-        top: 133px;
-    }
-
-    .side-menu ul li:hover ul {
-        margin-left: 31%
-    }
-
-    #menu-btn {
-        display: block;
-    }
-}
-
-/*--------------------------Slider CSS--------------------------*/
-
-.slider {
-    width: 85%;
-    margin-left: 15%;
-    padding: 0 10px;
-}
-
-.carousel {
-    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
-}
-
-.carousel-indicators {
-    z-index: 1 !important;
-}
-
-@media only screen and (max-width: 980px) {
-    .slider {
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
-/*--------------------------Featured-Categories CSS--------------------------*/
-
-.featured-categories {
-    margin: 50px 0;
-}
-
-.featured-categories img {
+@media (max-width: 575px) {
+  .grid-sizer,
+  .grid-item {
     width: 100%;
-    padding: 20px 0;
-    transition: 1s;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+
+/* Size for larger devices*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.landing-masonry img {
+    transition: .5s;
     cursor: pointer;
 }
 
-.featured-categories img:hover {
-    transform: scale(1.1);
-}
-
-/*--------------------------On Sale Product--------------------------*/
-
-.title-box {
-    background-color: #00447C;
-    color: #fff;
-    width: 180px;
-    padding: 4px 10px;
-    height: 40px;
-    margin-bottom: 30px;
-    display: flex;
-}
-
-.title-box h2 {
-    font-size: 24px;
-}
-
-.title-box::after {
-    content: '';
-    border-top: 40px solid #00447C;
-    border-right: 50px solid transparent;
-    position: absolute;
-    display: flex;
-    margin-top: -4px;
-    margin-left: 170px;
-}
-
-/*--------------------------Product-Top-CSS--------------------------*/
-
-.product-top img {
-    width:100%;
-}
-
-.overlay-right {
-    display: block;
-    opacity: 0;
-    position: absolute;
-    top: 10%;
-    margin-left: 0;
-    width: 70px;
-}
-
-.overlay-right .far, .overlay-right .fas {
-    cursor: pointer;
-    background-color: #fff;
-    color: #000;
-    height: 35px;
-    width: 35px;
-    font-size: 20px;
-    padding: 7px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.overlay-right .btn-secondary {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-.product-top:hover .overlay-right {
-    opacity: 1;
-    margin-left: 5%;
-    transition: 0.5s;
-}
-
-/*--------------------------Product-Bottom-CSS--------------------------*/
-
-.product-bottom .fas {
-    color: orange;
-    font-size: 10px;
-}
-
-.product-bottom h3 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.product-bottom h5 {
-    font-size: 15px;
-    padding-bottom: 10px;
-}
-
-.new-products {
-    margin: 50px 0;
-}
-
-/*--------------------------Website-Features--------------------------*/
-
-.website-features {
-    margin: 60px 0;
-}
-
-.website-features img {
-    width: 20%;
-}
-
-.feature-text {
-    margin-top: 10px;
-    float: right;
-    width: 80%;
-    padding-left: 20px;
-}
-
-.feature-box {
-    padding-top: 20px;
+.landing-masonry img:hover {
+    transform: scale(1.07);
 }
 
 /*--------------------------Footer--------------------------*/
@@ -419,7 +285,7 @@ body {
 }
 
 .single-product .fas {
-    color:orange;
+    color: orange;
 }
 
 .single-product .price {
