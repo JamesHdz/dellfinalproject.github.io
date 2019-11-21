@@ -353,47 +353,77 @@ body {
 }
 
 /*--------------------------Footer--------------------------*/
-
 .footer {
     margin-top: 50px;
-    background: #000;
-    color: #fff;
-}
+     color: rgb(255, 255, 255);
+     background: rgb(51, 51, 51);
+ }
+ 
+ .footer h1 {
+     font-size: 14px;
+     margin: 25px 0;
+ }
+ 
+ .footer p {
+     font-size: 12px;
+ }
+ 
+ .copyright {
+     margin-bottom: -80px;
+     text-align: center;
+     font-size: 15px;
+     padding-bottom: 20px;
+ }
+ 
+ .footer hr {
+     margin-top: 10px;
+     background-color: #ccc;
+ }
+ 
 
-.footer h1 {
-    font-size: 14px;
-    margin: 25px 0;
-}
-
-.footer p {
-    font-size: 12px;
-}
-
-.copyright {
-    margin-bottom: -80px;
-    text-align: center;
-    font-size: 15px;
-    padding-bottom: 20px;
-}
-
-.fa-heart {
-    color: red;
-    font-size: 15px;
-}
-
-.footer hr {
-    margin-top: 10px;
-    background-color: #ccc;
-}
-
-.footer-image img {
-    width: 150px;
-}
-
-.footer .row .fab {
-    padding-right: 20px;
-    font-size: 15px;
-}
+ .footer .row .fab {
+     padding-right: 20px;
+     font-size: 15px;
+ }
+ 
+ .footer input{
+     height: 40px;
+     width: 210px;
+     background: transparent !important;
+ }
+ 
+ .footer .form-control {
+     margin-top: 0;
+     margin-left: 0;
+     border-radius: 4px !important;
+     border-color: #7FC4FD;
+ }
+ 
+ .footer ::placeholder {
+     color:white;
+ }
+ 
+ .footer .btn-primary {
+     background: white !important;
+     color: #00447C;
+     font-size: 15px;
+     margin-left: 40px;
+     border: #00447C;
+     box-shadow: none !important;
+     text-transform: capitalize !important;
+     width: 120px;
+     height: 40px;
+ }
+ 
+ .footer .form-control::placeholder { 
+     color: white;
+ }
+ 
+ #email-row {
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+ 
 
 /*--------------------------Single-Product--------------------------*/
 
