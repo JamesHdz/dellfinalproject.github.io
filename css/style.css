@@ -10,7 +10,7 @@
 
 body {
     background-color: #f1f3f4;
-    font-family: Roboto, sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
 }
 
 html,
@@ -242,9 +242,9 @@ header,
     cursor: pointer;
 }
 
-.landing-masonry img:hover {
+/* .landing-masonry img:hover {
     transform: scale(1.07);
-}
+} */
 
 /*--------------------------Footer--------------------------*/
 .footer {
