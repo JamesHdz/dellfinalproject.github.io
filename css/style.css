@@ -17,14 +17,20 @@ html,
 body,
 header,
 .view {
-  height: 90%;
+    height: 90%;
 }
 
 /*--------------------------Main Navigation--------------------------*/
 
 .navbar {
     z-index: 1;
-    background-color: #333;
+    width: 100%;
+    background-color: #080D20;
+}
+
+.container-fluid {
+    margin: 0px !important;
+    padding: 0px 8% !important;
 }
 
 .nav-item a {
@@ -155,62 +161,80 @@ header,
     margin: 0px !important;
 }
 
+/*--------------------------Main Navigation--------------------------*/
+
+.white-text h2 {
+    font-style: bold;
+    font-size: 120px;
+}
+
 /*--------------------------Masonry Featured Products--------------------------*/
 
 /* Within style tags in your html file */
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .grid-sizer,
 .grid-item {
-  width: 50%;
-}
-@media (max-width: 575px) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .grid-sizer,
-  .grid-item {
     width: 50%;
-  }
+}
+
+@media (max-width: 575px) {
+
+    .grid-sizer,
+    .grid-item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    }
 }
 
 /* Size for larger devices*/
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-  }
+
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-  }
+
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    }
 }
+
 @media (min-width: 1200px) {
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-  }
+
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    }
 }
 
 .grid-item {
-  float: left;
+    float: left;
 }
 
 .grid-item img {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 .landing-masonry img {
@@ -225,74 +249,74 @@ header,
 /*--------------------------Footer--------------------------*/
 .footer {
     margin-top: 50px;
-     color: rgb(255, 255, 255);
-     background: rgb(51, 51, 51);
- }
- 
- .footer h1 {
-     font-size: 14px;
-     margin: 25px 0;
- }
- 
- .footer p {
-     font-size: 12px;
- }
- 
- .copyright {
-     margin-bottom: -80px;
-     text-align: center;
-     font-size: 15px;
-     padding-bottom: 20px;
- }
- 
- .footer hr {
-     margin-top: 10px;
-     background-color: #ccc;
- }
- 
+    color: rgb(255, 255, 255);
+    background: rgb(51, 51, 51);
+}
 
- .footer .row .fab {
-     padding-right: 20px;
-     font-size: 15px;
- }
- 
- .footer input{
-     height: 40px;
-     width: 210px;
-     background: transparent !important;
- }
- 
- .footer .form-control {
-     margin-top: 0;
-     margin-left: 0;
-     border-radius: 4px !important;
-     border-color: #7FC4FD;
- }
- 
- .footer ::placeholder {
-     color:white;
- }
- 
- .footer .btn-primary {
-     background: white !important;
-     color: #00447C;
-     font-size: 15px;
-     margin-left: 40px;
-     border: #00447C;
-     box-shadow: none !important;
-     text-transform: capitalize !important;
-     width: 120px;
-     height: 40px;
- }
- 
- .footer .form-control::placeholder { 
-     color: white;
- }
- 
- #email-row {
-     margin-top: 30px;
-     margin-bottom: 30px;
- }
+.footer h1 {
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.copyright {
+    margin-bottom: -80px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.footer hr {
+    margin-top: 10px;
+    background-color: #ccc;
+}
+
+
+.footer .row .fab {
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.footer input {
+    height: 40px;
+    width: 210px;
+    background: transparent !important;
+}
+
+.footer .form-control {
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 4px !important;
+    border-color: #7FC4FD;
+}
+
+.footer ::placeholder {
+    color: white;
+}
+
+.footer .btn-primary {
+    background: white !important;
+    color: #00447C;
+    font-size: 15px;
+    margin-left: 40px;
+    border: #00447C;
+    box-shadow: none !important;
+    text-transform: capitalize !important;
+    width: 120px;
+    height: 40px;
+}
+
+.footer .form-control::placeholder {
+    color: white;
+}
+
+#email-row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 /*--------------------------Single-Product--------------------------*/
 
