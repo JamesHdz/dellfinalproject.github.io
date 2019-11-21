@@ -124,6 +124,14 @@ header,
     margin-right: 5px;
 }
 
+#account {
+    display: inline-block;
+}
+
+.nomobile {
+    display: inline-block;
+}
+
 .fa-flag-usa {
     margin-right: 5px;
 }
@@ -150,6 +158,11 @@ header,
     .menu-bar ul li {
         height: 70px;
         width: 100%;
+    }
+
+    .menu-bar ul li .nomobile {
+            display:none;
+        }
     }
 }
 
