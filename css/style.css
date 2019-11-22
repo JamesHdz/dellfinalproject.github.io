@@ -167,7 +167,6 @@ header,
     .menu-bar ul li .nomobile {
             display:none;
         }
-    }
 }
 
 .btn-outline-primary {
@@ -313,7 +312,7 @@ header,
 
 
 .footer .btn-outline-primary {
-    background: white;
+    background: white !important;
     border-radius: 4px !important;
     border-color: #7FC4FD;
 }
