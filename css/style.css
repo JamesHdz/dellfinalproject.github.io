@@ -307,6 +307,13 @@ header,
 .footer .form-control {
     margin-top: 0;
     margin-left: 0;
+    border-radius: 2px !important;
+    border-color: #00447C;
+}
+
+
+.footer .btn-outline-primary {
+    background: white;
     border-radius: 4px !important;
     border-color: #7FC4FD;
 }
@@ -327,13 +334,12 @@ header,
     height: 40px;
 }
 
-.footer .form-control::placeholder {
-    color: white;
-}
-
 #email-row {
     margin-top: 30px;
-    margin-bottom: 30px;
+}
+
+.footer .form-control::placeholder {
+    color: white;
 }
 
 /*--------------------------Single-Product--------------------------*/
@@ -399,7 +405,6 @@ header,
 }
 
 /*--------------------------Landing Hover Overlay--------------------------*/
-
 
 .hovereffect {
     width: 100%;
