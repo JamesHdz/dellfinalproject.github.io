@@ -11,7 +11,7 @@
 
 body {
     background-color: #f1f3f4;
-    font-family: "Roboto", sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 html,
@@ -179,11 +179,11 @@ header,
     margin: 0px !important;
 }
 
-/*--------------------------Main Navigation--------------------------*/
+/*--------------------------Hero Banner--------------------------*/
 
 .white-text h2 {
     font-style: bold;
-    font-size: 120px;
+    font-size: 7.5em;
 }
 
 /*--------------------------Masonry Featured Products--------------------------*/
