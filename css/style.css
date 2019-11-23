@@ -37,6 +37,15 @@ header,
     margin: 5px 10px;
 }
 
+.form-control {
+    /* margin-top: 9px; */
+    border: 1px solid #00447C;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none;
+}
 .active-cyan-4 input[type=text]:focus:not([readonly]) {
     border: 1px solid #4dd0e1;
     box-shadow: 0 0 0 1px #4dd0e1;
