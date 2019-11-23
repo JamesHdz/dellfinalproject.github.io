@@ -157,13 +157,13 @@ body,
 /*--------------------------Hero Banner--------------------------*/
 
 #view {
-    margin-top: 4.5%;
+    margin-top: 3%;
     background: url("../images/dell-visor-banner.png") no-repeat center center;
     background-size: cover;
 }
 
 .jumbotron {
-    height: 500px;
+    height: 977px;
 }
 
 #hero-title {
@@ -225,6 +225,10 @@ body,
 /* Within style tags in your html file */
 * {
     box-sizing: border-box;
+}
+
+#masonry-col {
+    padding: 1%;
 }
 
 .grid:after {
@@ -400,7 +404,7 @@ body,
     text-align: center;
     cursor: default;
     /* background: #00447C; */
-    background-image: linear-gradient(#090F23, #872A70);
+    background-image: linear-gradient(#263f9b, #263F9B);
 }
 
 .hovereffect .overlay {
