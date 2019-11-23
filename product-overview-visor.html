@@ -9,22 +9,18 @@
     <link rel="icon" href="images/dell-logo.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Stylesheets -->
+
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Font Stylesheets -->
+
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/9c56f6dc68.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 
@@ -73,17 +69,21 @@
 
     <section class="breadcrumbs">
         <div class="container-fluid">
-            <div class="bc-icons-2">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb white lighten-4">
-                        <li class="breadcrumb-item"><a class="black-text" href="index.html">Home</a><i
-                                class="fas fa-angle-right mx-2" aria-hidden="true"></i></li>
-                        <li class="breadcrumb-item"><a class="black-text" href="#">VR Headsets</a><i
-                                class="fas fa-angle-right mx-2" aria-hidden="true"></i></li>
-                        <li class="breadcrumb-item active">Dell Visor</li>
-                    </ol>
-                </nav>
-                <div style="height: 40px;"></div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="bc-icons-2">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb white lighten-4">
+                                <li class="breadcrumb-item"><a class="black-text" href="index.html">Home</a><i
+                                        class="fas fa-angle-right mx-2" aria-hidden="true"></i></li>
+                                <li class="breadcrumb-item"><a class="black-text" href="#">VR Headsets</a><i
+                                        class="fas fa-angle-right mx-2" aria-hidden="true"></i></li>
+                                <li class="breadcrumb-item active">Dell Visor</li>
+                            </ol>
+                        </nav>
+                        <div style="height: 40px;"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -128,7 +128,6 @@
                                     src='images/dell-visor-prod-ov-sm-3.png' alt='' /></li>
                             <li data-target='#carousel-custom' data-slide-to='3'><img
                                     src='images/dell-visor-prod-ov-sm-4.jpg' alt='' /></li>
-
                         </ol>
                     </div>
                 </div> <!-- /col-sm-6 -->
@@ -175,60 +174,57 @@
 
     <!--------------------------Footer-------------------------->
     <section class="footer">
-            <div class="container-fluid tex-center">
-                <div class="row">
-                    <div class="col-md-2">
-                        <h1>Privacy Statement</h1>
-                    </div>
-                    <div class="col-md-2">
-                        <h1>Disclaimer</h1>
-                    </div>
-                    <div class="col-md-2">
-                        <h1>Terms of Sale</h1>
-                    </div>
-                    <div class="col-md-2">
-                        <h1>Contact</h1>
-                    </div>
-                    <div class="col-md-2">
-                        <h1>Feedback</h1>
-                    </div>
-                    <div class="col-md-2">
-                        <h1>Subscribe to Dell VR via Email</h1>
-                    </div>
+        <div class="container-fluid tex-center">
+            <div class="row">
+                <div class="col-md-2">
+                    <h1>Privacy Statement</h1>
                 </div>
-                <div class="row" id="email-row">
-                    <div class="col-md-8"></div>
-                    <!-- <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <h1>Disclaimer</h1>
+                </div>
+                <div class="col-md-2">
+                    <h1>Terms of Sale</h1>
+                </div>
+                <div class="col-md-2">
+                    <h1>Contact</h1>
+                </div>
+                <div class="col-md-2">
+                    <h1>Feedback</h1>
+                </div>
+                <div class="col-md-2">
+                    <h1>Subscribe to Dell VR via Email</h1>
+                </div>
+            </div>
+            <div class="row" id="email-row">
+                <div class="col-md-8"></div>
+                <!-- <div class="col-md-2"></div>
                     <div class="col-md-2"></div>
                     <div class="col-md-2"></div> -->
-                    <div class="col-md-2 align-self-center">
-                        <input type="text" class="form-control" id="email-form" placeholder="Email Address">
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary" id="subscribe-btn">Subscribe</button>
-                    </div>
+                <div class="col-md-2 align-self-center">
+                    <input type="text" class="form-control" id="email-form" placeholder="Email Address">
                 </div>
-                <hr>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary" id="subscribe-btn">Subscribe</button>
+                </div>
             </div>
-            <p class="copyright">&copy; 2019 Dell</p>
-            </div>
-        </section>
+            <hr>
+        </div>
+        <p class="copyright">&copy; 2019 Dell</p>
+        </div>
+    </section>
 
     <!--------------------------Scripts-------------------------->
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    <!-- Popper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js">
-    </script> -->
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js">
-    </script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
