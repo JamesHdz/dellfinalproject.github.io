@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en" class="full-height">
 
 <head>
@@ -10,6 +12,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
+    <!-- <link rel="stylesheet" href="css/custom2.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -31,12 +35,10 @@
     <!--------------------------Main Navigation-------------------------->
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/dell-logo-wh.png" class="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="custom-toggler navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
@@ -56,15 +58,18 @@
                 </div>
                 <div class="menu-bar">
                     <ul>
-                        <li><a href="#"><i class="fas fa-user"></i>Sign In</a></li>
-                        <!-- <li class="sign-btn"><a href="#"><i class="fas fa-user"></i>Sign In or Sign Up</a></li> -->
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li id="account"><a href="#"><i class="fas fa-user"></i>
+                                <section class="nomobile">Sign In</section>
+                            </a></li>
                         <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
                         <li><a href="#"><i class="fas fa-flag-usa"></i></a></li>
                     </ul>
                 </div>
             </div>
-
         </nav>
+
+
 
         <!--------------------------Hero Banner-------------------------->
 
@@ -73,7 +78,10 @@
                 <div class="mask rgba-black-light flex-center">
                     <div class="container text-center white-text">
                         <div class="white-text text-center wow fadeInUp">
-                            <h2>DELL VISOR</h2>
+                            <a href="product-overview-visor.html"><h2>DELL VISOR</h2></a>
+                        </div>
+                        <div class="white-text text-center wow fadeInUp middle">
+                                <a href="product-overview-visor.html" class="text"><h3>Immerse yourself in gorgeous virtual reality.</h3></a>
                         </div>
                     </div>
                 </div>
@@ -82,86 +90,77 @@
 
     </header>
 
-    <!--------------------------Body Content-------------------------->
-
-    <!-- <main class="text-center py-5">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <p align="justify">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.</p>
-
-                </div>
-            </div>
-        </div>
-
-    </main> -->
-
-
-
-
     <!--------------------------Masonry Featured Products-------------------------->
 
     <div class="container-fluid">
         <section class="landing-masonry">
             <div class="grid">
-                <div class="grid-sizer"></div>
-                <div class="grid-item">
-                    <img src="images/VR-headsets.png" />
-                </div>
-                <div class="grid-item">
-                    <img src="images/feat-products.png" />
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="images/AlienwareHeader.png" alt="">
+                            <div class="overlay">
+                                <h2>Alienware</h2>
+                                <p>
+                                    <a href="#">Check out some of the most, <br /> have products.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="images/AccessoriesHeader.png" alt="">
+                            <div class="overlay">
+                                <h2>Accessories</h2>
+                                <p>
+                                    <a href="#">Check out some of the most, <br />must have products.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
     <!--------------------------Footer-------------------------->
-    <section class="footer">
-        <div class="container tex-center">
-            <div class="row">
-                <div class="col-md-2">
-                    <h1>Privacy Statement</h1>
-                </div>
-                <div class="col-md-2">
-                    <h1>Disclaimer</h1>
-                </div>
-                <div class="col-md-2">
-                    <h1>Terms of Sale</h1>
-                </div>
-                <div class="col-md-2">
-                    <h1>Contact</h1>
-                </div>
-                <div class="col-md-2">
-                    <h1>Feedback</h1>
-                </div>
-                <div class="col-md-2">
-                    <h1>Subscribe to Dell VR via Email</h1>
-                </div>
-            </div>
 
-            <div class="row" id="email-row">
-                <div class="col-md-2"></div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2">
-                    <input type="text" class="form-control" placeholder="Email Address">
+    <section class="footer">
+            <div class="container-fluid tex-center">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h1>Privacy Statement</h1>
+                    </div>
+                    <div class="col-md-2">
+                        <h1>Disclaimer</h1>
+                    </div>
+                    <div class="col-md-2">
+                        <h1>Terms of Sale</h1>
+                    </div>
+                    <div class="col-md-2">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="col-md-2">
+                        <h1>Feedback</h1>
+                    </div>
+                    <div class="col-md-2">
+                        <h1>Subscribe to Dell VR via Email</h1>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-primary">Subscribe</button>
+                <div class="row" id="email-row">
+                    <div class="col-md-8"></div>
+                    <!-- <div class="col-md-2"></div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2"></div> -->
+                    <div class="col-md-2 align-self-center">
+                        <input type="text" class="form-control" id="email-form" placeholder="Email Address">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary" id="subscribe-btn">Subscribe</button>
+                    </div>
                 </div>
+                <hr>
             </div>
-            <hr>
         </div>
             <p class="copyright"> &copy; 2019 Dell</p>
         </div>
@@ -169,30 +168,15 @@
 
     <!--------------------------Scripts-------------------------->
 
-    <script>
-        function openmenu() {
-            document.getElementById("side-menu").style.display = "block";
-            document.getElementById("menu-btn").style.display = "none";
-            document.getElementById("close-btn").style.display = "block";
-        }
-
-        function closemenu() {
-            document.getElementById("side-menu").style.display = "none";
-            document.getElementById("menu-btn").style.display = "block";
-            document.getElementById("close-btn").style.display = "none";
-        }
-    </script>
-
-    <script src="myScript.js"></script>
-
     <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
     </script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js">
+    </script> -->
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js">
     </script>
