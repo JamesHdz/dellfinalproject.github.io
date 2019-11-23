@@ -82,6 +82,19 @@ h4 {
     height: 400px !important;
 }
 
+@media only screen and (max-width: 980px) {
+
+    #carousel-example-generic {
+        margin: 20px auto;
+        width: 200px;
+    }
+    
+    #carousel-custom {
+        margin: 20px 0 20px 0;
+        width: 300px;
+    }
+}
+
 /*-------------------Product Overview List-------------------*/
 
 .ul #prod-overview-list-align li {

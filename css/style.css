@@ -162,6 +162,11 @@ header,
     color: white !important;
 }
 
+.white-text h2 {
+    font-style: bold;
+    font-size: 7.5em !important;
+}
+
 /*--------------------------Breadcrumbs--------------------------*/
 
 
@@ -186,13 +191,6 @@ header,
         margin-bottom: 0;
         margin-left: 40px;
     }
-}
-
-/*--------------------------Hero Banner--------------------------*/
-
-.white-text h2 {
-    font-style: bold;
-    font-size: 7.5em !important;
 }
 
 /*--------------------------Masonry Featured Products--------------------------*/
@@ -277,8 +275,8 @@ header,
 
 .footer {
     margin-top: 50px;
-    color: rgb(255, 255, 255);
-    background: rgb(51, 51, 51);
+    color: rgb(51, 51, 51);
+    background: rgb(229, 229, 229);
 }
 .footer h1 {
     font-size: 14px;
@@ -309,13 +307,13 @@ header,
 #email-form {
     /* margin-top: 9px;
     margin-left: 200px; */
-    border: 1px solid #7FC4FD;
+    border: 1px solid #080D20;
     border-radius: 4px !important;
     box-shadow: none;
 }
 #subscribe-btn {
-    background: white !important;
-    color: #00447C;
+    background: #080D20 !important;
+    color: white;
     font-size: 15px;
     margin-left: 40px;
     box-shadow: none !important;
@@ -325,7 +323,7 @@ header,
     border: none;
 }
 .footer .form-control::placeholder {
-    color: white;
+    color: #080D20;
 }
 #email-row {
     margin-top: 30px;
@@ -379,13 +377,13 @@ header,
 }
 
 .single-product .btn-primary {
-    background: #6EA304 !important;
+    background: #080D20 !important;
     color: #fff;
     font-family: "Roboto", sans-serif !important;
     font-size: 17px !important;
     font-weight: bold;
     padding: 5px 5px;
-    width: 30%;
+    width: 40%;
     margin-left: 20px;
     border: none;
     border-radius: 3px;
@@ -394,13 +392,13 @@ header,
 
 .single-product .btn-secondary {
     background: none !important;
-    color: #00447C;
+    color: #080D20;
     font-family: "Roboto", sans-serif !important;
     font-size: 17px !important;
     font-weight: bold;
     padding: 5px 20px;
     margin-left: 10px;
-    border: 1px solid #00447C !important;
+    border: 1px solid #080D20 !important;
     border-radius: 3px;
     box-shadow: none !important;
 }
