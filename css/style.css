@@ -105,7 +105,7 @@ header,
 }
 
 .nomobile {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .fa-flag-usa {
@@ -137,7 +137,7 @@ header,
     }
 
     .menu-bar ul li .nomobile {
-        display: none;
+        display: none !important;
     }
 }
 
