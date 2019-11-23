@@ -5,7 +5,7 @@
 
 body {
     background-color: #f1f3f4;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
 }
 
 html,
@@ -328,16 +328,18 @@ header,
     }
 }
 
-/*--------------------------Single-Product--------------------------*/
+/*--------------------------Product Overview--------------------------*/
 
 .single-product {
+    font-family: "Roboto", sans-serif !important;
     margin-top: 70px;
 }
 
 .new-arrival {
-    background: green;
+    background: none;
     width: 50px;
     color: white;
+    font-family: "Roboto", sans-serif !important;
     font-size: 12px !important;
     font-weight: bold;
     margin-top: 20px;
@@ -348,18 +350,19 @@ header,
 }
 
 .single-product .fas {
-    color: orange;
+    color: #0076CE;
 }
 
 .single-product .price {
-    color: orange;
+    font-family: "Roboto", sans-serif !important;
     font-size: 26px !important;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding-top: 20px;
 }
 
 .single-product input {
     border: 1px solid #ccc;
+    font-family: "Roboto", sans-serif !important;
     font-weight: bold;
     height: 33px;
     text-align: center;
@@ -367,11 +370,29 @@ header,
 }
 
 .single-product .btn-primary {
-    background: orange !important;
+    background: #6EA304 !important;
     color: #fff;
-    font-size: 15px !important;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 17px !important;
+    font-weight: bold;
+    padding: 5px 5px;
+    width: 30%;
     margin-left: 20px;
     border: none;
+    border-radius: 3px;
+    box-shadow: none !important;
+}
+
+.single-product .btn-secondary {
+    background: none !important;
+    color: #00447C;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 17px !important;
+    font-weight: bold;
+    padding: 5px 20px;
+    margin-left: 10px;
+    border: 1px solid #00447C !important;
+    border-radius: 3px;
     box-shadow: none !important;
 }
 

@@ -39,9 +39,6 @@
 h4 {
     margin: 20px 10px 10px;
 }
-p {
-    margin: 10px;
-}
 
 #carousel-example-generic {
     margin: 20px auto;
@@ -50,7 +47,7 @@ p {
 
 #carousel-custom {
     margin: 20px 0 20px 0;
-    width: 400px;
+    width: 600px;
 }
 #carousel-custom .carousel-indicators {
     margin: 10px 0 0;
@@ -78,4 +75,15 @@ p {
 }
 #carousel-custom .carousel-indicators li:hover img {
     opacity: 0.75;
+}
+
+.carousel-inner {
+    width: 600px !important;
+    height: 400px !important;
+}
+
+/*-------------------Product Overview List-------------------*/
+
+.ul #prod-overview-list-align li {
+    padding-left: 10px !important;
 }
