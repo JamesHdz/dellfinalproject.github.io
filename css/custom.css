@@ -24,13 +24,14 @@
     opacity: 1;
   }
 
+  /* check why this no work */
   .full-bg-img a {
-      text-decoration: none !important;
+      text-decoration: none;
   }
   
   .text {
     color: white;
-    font-size: 16px;
+    font-size: 1.6em;
     padding: 16px 32px;
   }
 
@@ -38,9 +39,6 @@
 
 h4 {
     margin: 20px 10px 10px;
-}
-p {
-    margin: 10px;
 }
 
 #carousel-example-generic {
@@ -50,7 +48,7 @@ p {
 
 #carousel-custom {
     margin: 20px 0 20px 0;
-    width: 400px;
+    width: 600px;
 }
 #carousel-custom .carousel-indicators {
     margin: 10px 0 0;
@@ -66,7 +64,7 @@ p {
     border-radius: 0;
     display: inline-block;
     height: auto;
-    margin: 0 !important;
+    margin: 0;
     width: auto;
 }
 #carousel-custom .carousel-indicators li img {
@@ -78,4 +76,122 @@ p {
 }
 #carousel-custom .carousel-indicators li:hover img {
     opacity: 0.75;
+}
+
+.carousel-inner {
+    width: 600px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 980px) {
+
+    #carousel-example-generic {
+        margin: 20px auto;
+        width: 200px;
+    }
+    
+    #carousel-custom {
+        margin: 20px 0 20px 0;
+        width: 300px;
+    }
+}
+
+/*-------------------Product Overview List-------------------*/
+
+/*-- try adding columns --*/
+.ul #prod-overview-list-align li {
+    padding-left: 10px;
+}
+
+/*-------------------Search Results-------------------*/
+
+.fa-chevron-left {
+    color: black;
+    padding-right: 5px;
+    line-height: 1.4;
+}
+
+.section-content .container {
+    margin-top: 5rem;
+}
+
+/* SIDE FILTERS */
+
+.card-title {
+    font-size: 2.0em;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 1.45rem 0rem;
+}
+
+.card {
+    box-shadow: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.card-body {
+    padding: 1px;
+}
+
+.card-header {
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.7em;
+    border-bottom: none;
+    padding: 1rem 0rem;
+}
+
+.card-body {
+    padding: 1px;
+}
+
+.custom-control {
+    padding-bottom: 0.7rem;
+    padding-left: none;
+}
+
+.custom-control-label {
+    padding-left: 1rem;
+}
+.range-control {
+    display: flex ;
+    padding-left: none;
+}
+#range-form {
+    width: 105px;
+    margin-right: 2.3rem;
+    /* margin-top: .7rem; */
+    margin-bottom: 1rem;
+    margin-left: none;
+    border-radius: 2px;
+}
+
+/* MAIN SQUEEZE */
+
+.form-inline {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 0.56rem 0rem;
+}
+
+#btn-list {
+    height: 40px;
+    box-shadow: none;
+}
+
+.fa-list {
+    color: white;
+}
+
+/* cards */
+
+.card-product-list {
+    margin-top: 30px; 
+}
+
+.img-search-result {
+    height: 205px;
+    width: 259px;
 }

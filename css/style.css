@@ -1,16 +1,37 @@
+/*-- This is the main style CSS for the website --*/
+
 * {
     margin: 0;
     padding: 0;
 }
 
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+/*
+Base font size is 10px = 1em
+12px = 1.2em
+14px = 1.4em
+16px = 1.6em
+18px = 1.8em
+20px = 2em
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
-    background-color: #f1f3f4;
-    font-family: 'Roboto', sans-serif !important;
+    background-color: #fff;
 }
 
 html,
 body,
-header,
 .view {
     height: 90%;
 }
@@ -24,12 +45,13 @@ header,
 }
 
 .container-fluid {
-    margin: 0px !important;
-    padding: 0px 8% !important;
+    margin: 0px;
+    padding: 0px 8%;
 }
 
 .nav-item a {
-    color: white !important;
+    color: white;
+    font-size: 1.6em;
 }
 
 .logo {
@@ -64,7 +86,7 @@ header,
 }
 
 .menu-bar ul li a {
-    font-size: 16px !important;
+    font-size: 1.6em;
     /* font-weight: bold; */
     color: #fff;
     text-decoration: none;
@@ -96,7 +118,7 @@ header,
 }
 
 .nomobile {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .fa-flag-usa {
@@ -128,29 +150,40 @@ header,
     }
 
     .menu-bar ul li .nomobile {
-        display: none;
+        display: none !important;
     }
-}
-
-.btn-outline-primary {
-    display: inline-flex;
-    text-align: center;
-    border: 1px solid white !important;
-    color: white !important;
-    border-radius: 3px !important;
-    margin: 0px !important;
 }
 
 /*--------------------------Hero Banner--------------------------*/
 
-.view {
-    margin-top: 75px;
+#view {
+    margin-top: 3%;
     background: url("../images/dell-visor-banner.png") no-repeat center center;
     background-size: cover;
 }
 
-.view a {
-    color: white !important;
+.jumbotron {
+    height: 977px;
+}
+
+#hero-title {
+    color: white;
+}
+
+#hero-subtext {
+    color: white;
+}
+
+@media only screen and (min-width: 2496px) {
+    #view {
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #view {
+        margin-top: 12%;
+    }
 }
 
 /*--------------------------Breadcrumbs--------------------------*/
@@ -161,6 +194,14 @@ header,
     margin-bottom: 0;
     margin-left: 150px;
     height: 0px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb li {
+    font-size: 1.2em;
 }
 
 .bc-icons-2 .breadcrumb-item+.breadcrumb-item::before {
@@ -179,18 +220,15 @@ header,
     }
 }
 
-/*--------------------------Hero Banner--------------------------*/
-
-.white-text h2 {
-    font-style: bold;
-    font-size: 7.5em !important;
-}
-
 /*--------------------------Masonry Featured Products--------------------------*/
 
 /* Within style tags in your html file */
 * {
     box-sizing: border-box;
+}
+
+#masonry-col {
+    padding: 1%;
 }
 
 .grid:after {
@@ -199,146 +237,97 @@ header,
     clear: both;
 }
 
-/* .grid-sizer,
-.grid-item {
-    width: 50%;
-}
-
-@media (max-width: 575px) {
-
-    .grid-sizer,
-    .grid-item {
-        width: 100%;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-
-    .grid-sizer,
-    .grid-item {
-        width: 50%;
-    }
-} */
-
-/* Size for larger devices*/
-
-/* @media (min-width: 768px) and (max-width: 991px) {
-
-    .grid-sizer,
-    .grid-item {
-        width: 50%;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    .grid-sizer,
-    .grid-item {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .grid-sizer,
-    .grid-item {
-        width: 50%;
-    }
-}
-
-.grid-item {
-    float: left;
-}
-
-.grid-item img {
-    display: block;
-    max-width: 100%;
-} */
-
 .landing-masonry img {
     transition: .5s;
     cursor: pointer;
 }
 
-/* .landing-masonry img:hover {
-    transform: scale(1.07);
-} */
-
 /*--------------------------Footer--------------------------*/
 
 .footer {
     margin-top: 50px;
-    color: rgb(255, 255, 255);
-    background: rgb(51, 51, 51);
+    color: rgb(51, 51, 51);
+    background: rgb(229, 229, 229);
 }
+
 .footer h1 {
-    font-size: 14px;
+    font-size: 1.4em;
     margin: 25px 0;
 }
+
 .footer p {
-    font-size: 12px;
+    font-size: 1.2em;
 }
+
 .copyright {
     margin-bottom: -80px;
     text-align: center;
-    font-size: 15px;
+    font-size: 1.5em;
     padding-bottom: 20px;
 }
+
 .footer hr {
     margin-top: 10px;
     background-color: #ccc;
 }
+
 .footer .row .fab {
     padding-right: 20px;
-    font-size: 15px;
+    font-size: 1.5em;
 }
+
 .footer input {
     height: 40px;
     width: 210px;
-    background: transparent !important;
+    background: transparent;
 }
+
 #email-form {
     /* margin-top: 9px;
     margin-left: 200px; */
-    border: 1px solid #7FC4FD;
-    border-radius: 4px !important;
+    border: 1px solid #080D20;
+    border-radius: 4px;
     box-shadow: none;
 }
+
 #subscribe-btn {
-    background: white !important;
-    color: #00447C;
-    font-size: 15px;
+    background: #080D20;
+    color: white;
+    font-size: 1.5em;
     margin-left: 40px;
-    box-shadow: none !important;
-    text-transform: capitalize !important;
+    box-shadow: none;
     width: 120px;
     height: 40px;
     border: none;
 }
+
 .footer .form-control::placeholder {
-    color: white;
+    color: #080D20;
 }
+
 #email-row {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 @media only screen and (max-width: 980px) {
     #subscribe-btn {
-         margin-left: none !important;
+        margin-left: none;
     }
 }
 
-/*--------------------------Single-Product--------------------------*/
+/*--------------------------Product Overview--------------------------*/
 
 .single-product {
+    font-family: "Roboto", sans-serif !important;
     margin-top: 70px;
 }
 
 .new-arrival {
-    background: green;
+    background: none;
     width: 50px;
     color: white;
-    font-size: 12px !important;
+    font-size: 1.2em;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -348,13 +337,11 @@ header,
 }
 
 .single-product .fas {
-    color: orange;
+    color: #0076CE;
 }
 
 .single-product .price {
-    color: orange;
-    font-size: 26px !important;
-    font-weight: bold;
+    font-size: 2.6em;
     padding-top: 20px;
 }
 
@@ -367,12 +354,28 @@ header,
 }
 
 .single-product .btn-primary {
-    background: orange !important;
+    background: #080D20;
     color: #fff;
-    font-size: 15px !important;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 5px 5px;
+    width: 40%;
     margin-left: 20px;
     border: none;
-    box-shadow: none !important;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.single-product .btn-secondary {
+    background: none;
+    color: #080D20;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 5px 20px;
+    margin-left: 10px;
+    border: 1px solid #080D20;
+    border-radius: 3px;
+    box-shadow: none;
 }
 
 /*--------------------------Product-Description--------------------------*/
@@ -401,7 +404,7 @@ header,
     text-align: center;
     cursor: default;
     /* background: #00447C; */
-    background-image: linear-gradient(#090F23, #872A70);
+    background-image: linear-gradient(#263f9b, #263F9B);
 }
 
 .hovereffect .overlay {
@@ -439,7 +442,7 @@ header,
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 40px !important;
+    font-size: 4.0em;
     overflow: hidden;
     padding: 0.5em 0;
     background-color: transparent;
