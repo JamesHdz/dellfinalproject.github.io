@@ -105,6 +105,18 @@
     }
 }
 
+/*--------------------------Tab Titles--------------------------*/
+
+.single-product .nav-tabs a {
+    color: #555;
+    font-size: 1.5rem;
+    
+}
+
+.single-product .nav-tabs .active {
+    font-weight: bold;
+}
+
 /*--------------------------Product-Description--------------------------*/
 
 .product-description h6 {
