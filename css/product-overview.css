@@ -16,8 +16,32 @@
     margin-top: 20px;
 }
 
-.col-md-7 h2 {
-    color: #555;
+.single-product .container-fluid {
+    padding: 0 15%;
+}
+
+.single-product h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.single-product p, ul, li, label {
+    font-size: 1.6rem;
+}
+
+.single-product .col-md-6 .price {
+    font-size: 2.3rem;
+}
+
+.single-product ul {
+    margin-left: 1.5rem;
+}
+
+.single-product .col-md-6 img {
+    display: block;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
 }
 
 .single-product .fas {
@@ -37,89 +61,16 @@
     width: 30px;
 }
 
-.single-product .btn-primary {
-    background: #080D20;
-    color: #fff;
-    font-size: 1.7em;
-    font-weight: bold;
-    padding: 5px 5px;
-    width: 40%;
-    margin-left: 20px;
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
-}
-
-.single-product .btn-secondary {
-    background: none;
-    color: #080D20;
-    font-size: 1.7em;
-    font-weight: bold;
-    padding: 5px 20px;
-    margin-left: 10px;
-    border: 1px solid #080D20;
-    border-radius: 3px;
-    box-shadow: none;
-}
-
-/*-------------------Product Overview Carousel-------------------*/
-
-h4 {
-    margin: 20px 10px 10px;
-}
-
-#carousel-example-generic {
-    margin: 20px auto;
-    width: 400px;
-}
-
-#carousel-custom {
-    margin: 20px 0 20px 0;
-    width: 600px;
-}
-#carousel-custom .carousel-indicators {
-    margin: 10px 0 0;
-    overflow: auto;
-    position: static;
-    text-align: left;
-    white-space: nowrap;
-    width: 100%;
-}
-#carousel-custom .carousel-indicators li {
-    background-color: transparent;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    display: inline-block;
-    height: auto;
-    margin: 0;
-    width: auto;
-}
-#carousel-custom .carousel-indicators li img {
-    display: block;
-    opacity: 0.5;
-}
-#carousel-custom .carousel-indicators li.active img {
-    opacity: 1;
-}
-#carousel-custom .carousel-indicators li:hover img {
-    opacity: 0.75;
-}
-
-.carousel-inner {
-    width: 600px;
-    height: 400px;
-}
-
 @media only screen and (max-width: 980px) {
 
-    #carousel-example-generic {
+    .single-product .col-md-6 img {
         margin: 20px auto;
-        width: 200px;
+        padding: 0;
+        width: 100%;
     }
-    
-    #carousel-custom {
-        margin: 20px 0 20px 0;
-        width: 300px;
+
+    .single-product .container-fluid {
+        padding: 1.5em;
     }
 }
 
@@ -136,4 +87,46 @@ h4 {
 
 .product-description hr {
     margin-bottom: 50px;
+}
+
+/*--------------------------Buy and Save Bar--------------------------*/
+
+.footer {
+    margin: 0;
+}
+
+.buy-save-bar {
+    display: flex;
+    margin-top: 50px;
+    /* color: rgb(51, 51, 51); */
+    background: rgb(244, 244, 244);
+}
+
+.buy-save-bar .container-fluid {
+    padding: 2rem 0;
+}
+
+.buy-save-bar .btn-primary {
+    background: #080D20;
+    color: #fff;
+    font-size: 1.7em;
+    /* font-weight: bold; */
+    padding: 5px 5rem;
+    width: 40%;
+    margin-left: 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.buy-save-bar .btn-secondary {
+    background: #080D20;
+    color: #fff;
+    font-size: 1.7em;
+    /* font-weight: bold; */
+    padding: 5px 5rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
 }
