@@ -45,7 +45,38 @@
 }
 
 .single-product .fas {
-    color: #0076CE;
+    color: #080D20;
+    font-size: 2rem;
+}
+
+.single-product .reviews .row .review-package {
+    margin-top: 3rem;
+}
+
+.single-product .reviews .fas {
+    color: #080D20;
+    font-size: 1.5rem;
+}
+
+.single-product .reviews .card-product-list {
+    margin-top: 0;
+}
+
+.single-product .reviews .title {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.single-product .row p {
+    color: #555555;
+}
+
+.single-product .row .label-rating {
+    color: #AAA;
+}
+
+.single-product .row .show-more {
+    color: #001872;
 }
 
 .single-product .price {
@@ -88,6 +119,44 @@
 .product-description hr {
     margin-bottom: 50px;
 }
+
+/*--------------------------Manual Tab Bar--------------------------*/
+
+.manuals-support .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .5rem;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .manuals-support .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 1rem 1rem;
+  }
+  
+  .manuals-support .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: 0 .2rem .5rem #EBEBEB;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .manuals-support .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .manuals-support .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
 /*--------------------------Buy and Save Bar--------------------------*/
 
