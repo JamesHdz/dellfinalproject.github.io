@@ -117,19 +117,20 @@
     font-weight: bold;
 }
 
-/*--------------------------Product-Description--------------------------*/
+/*--------------------------Alienware Laptop List--------------------------*/
 
-.product-description h6 {
-    margin-top: 50px;
-    color: orange;
+.single-product .list-group {
+    margin-bottom: 2rem;
+
 }
 
-.product-description p {
-    margin-top: 30px;
+.single-product .list-group li {
+    color: #555;
 }
 
-.product-description hr {
-    margin-bottom: 50px;
+.single-product .list-group .fas {
+    color: #555;
+    font-size: 1rem;
 }
 
 /*--------------------------Manual Tab Bar--------------------------*/
