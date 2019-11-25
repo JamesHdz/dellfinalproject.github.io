@@ -1,43 +1,4 @@
-/*-- This is any custom CSS that individual elements or pages need --*/
-
-/*-------------------Landing Page Banner Hover-------------------*/
-
-.full-bg-img {
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .view .full-bg-img:hover .mask {
-    opacity: 1;
-  }
-  
-  .view .full-bg-img:hover .middle {
-    opacity: 1;
-  }
-
-  /* check why this no work */
-  .full-bg-img a {
-      text-decoration: none;
-  }
-  
-  .text {
-    color: white;
-    font-size: 1.6em;
-    padding: 16px 32px;
-  }
-
-
+/*-- This is any custom CSS that individual elements --*/
 
 /*-------------------Search Results-------------------*/
 
@@ -92,10 +53,12 @@
 .custom-control-label {
     padding-left: 1rem;
 }
+
 .range-control {
-    display: flex ;
+    display: flex;
     padding-left: none;
 }
+
 #range-form {
     width: 105px;
     margin-right: 2.3rem;
@@ -124,7 +87,7 @@
 /* cards */
 
 .card-product-list {
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 
 .img-search-result {
