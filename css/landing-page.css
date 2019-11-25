@@ -126,12 +126,13 @@
 }
 
 .hovereffect h2 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 4.0rem;
+    font-size: 7rem;
     overflow: hidden;
+    margin-top: 35%;
     padding: 0.5rem 0;
     background-color: transparent;
 }
@@ -164,6 +165,14 @@
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
+}
+
+.hovereffect .overlay p {
+    font-size: 3rem;
+}
+
+.hovereffect .overlay a {
+    text-decoration: none;
 }
 
 .hovereffect:hover a,
