@@ -1,0 +1,74 @@
+/* General */
+
+p {
+    font-size: 1.4em;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.8em;
+}
+
+hr {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/* Title */
+
+.order-confirmation {
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+#order-h2 {
+    margin-bottom: 3%
+}
+
+/* Delivery details */
+
+.delivery-details {
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+h4 {
+    margin: 20px 0px 10px;
+}
+
+/* Order Summary */
+.order-summary {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.summary-info {
+    margin-top: 2%;
+}
+
+hr.dotted {
+    border-top: 5px dotted rgb(229, 229, 229);
+}
+
+#total {
+    text-align: right;
+}
+
+
+/* Payment Info */
+
+.payment-info {
+    margin-top: 2%;
+    margin-bottom: 6%;
+}
