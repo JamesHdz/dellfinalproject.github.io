@@ -1,0 +1,19 @@
+.cart-tabs {
+    margin-top: 5%;
+}
+
+#top-product {
+    border-top: none;
+}
+
+.content {
+    margin-top: 5%;
+}
+
+#bottom-product {
+    border-bottom: 1px solid #dee2e6;
+}
+
+#order-summary {
+    border: 1px;
+}
