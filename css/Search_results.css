@@ -27,7 +27,7 @@
 }
 
 .filter-title {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.125); */
     padding: 1.45rem 0rem;
 }
 
@@ -84,7 +84,6 @@
 }
 
 #btn-list {
-    height: 40px !important;
     box-shadow: none !important;
 }
 
