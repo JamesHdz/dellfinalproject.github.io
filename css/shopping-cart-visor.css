@@ -1,19 +1,52 @@
+/* Tabs */
+
 .cart-tabs {
     margin-top: 5%;
 }
 
-#top-product {
-    border-top: none;
-}
-
+/* under tabs */
 .content {
     margin-top: 5%;
 }
 
-#bottom-product {
+.table td {
+    padding: .75rem;
+    vertical-align: top;
     border-bottom: 1px solid #dee2e6;
+    border-top: none;
 }
 
+.product-image {
+    width: 200px;
+}
+
+
+.content img {
+    height: 160px;
+    width: 218px;
+}
+
+.form-control {
+    width: 70%;
+}
+
+.price-wrap {
+    text-align: right;
+}
+
+.table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-bottom: 1px solid #dee2e6;
+    border-top: none;
+}
+
+
+
+
+
+
+/* Order-summary (aside) */
 #order-summary {
     border: 1px;
 }
