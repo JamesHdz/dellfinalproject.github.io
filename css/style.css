@@ -52,6 +52,10 @@ body,
     height: 90%;
 }
 
+.breadcrumb-item a {
+    color: #080D20
+}
+
 /*--------------------------Main Navigation--------------------------*/
 
 .navbar {
