@@ -114,6 +114,10 @@ body,
     font-size: 1.6rem;
 }
 
+.nav-item {
+    padding-left: 5rem;
+}
+
 .logo {
     height: 40px;
     margin: 5px 10px;
