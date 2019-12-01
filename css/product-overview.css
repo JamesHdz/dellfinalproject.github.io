@@ -184,32 +184,6 @@
     background: rgb(244, 244, 244);
 }
 
-.buy-save-bar .btn-primary {
-    background: #080D20;
-    color: #fff;
-    font-size: 1.7em;
-    padding: 5px 6rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
-}
-
-.buy-save-bar .btn-secondary {
-    background: #080D20;
-    color: #fff;
-    font-size: 1.7em;
-    padding: 5px 4rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
-}
-
 @media only screen and (max-width: 980px) {
     .buy-save-bar .btn-primary {
         margin-left: 1rem;

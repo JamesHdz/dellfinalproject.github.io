@@ -30,7 +30,7 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/dell-logo-wh.png" class="logo"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/dell-logo-wh.png" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -39,7 +39,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <span
+                                    class="sr-only">(current)</span></a>
+                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <a class="dropdown-item col-md-4 center-block" href="#"><img
+                                            src="images/1x/visor-icon.png">Dell Visor</a>
+                                    <a class="dropdown-item col-md-4 center-block" href="#"><img
+                                            src="images/1x/laptop-icon.png">Alienware</a>
+                                    <a class="dropdown-item col-md-4 center-block" href="#"><img
+                                            src="images/1x/controllers-icon.png">Accessories</a>
+                                </div>
+                            </div>
+                        </li>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Support</a>
@@ -64,27 +78,26 @@
                 </div>
             </div>
         </nav>
+    </header>
 
+    <!--------------------------Hero Banner-------------------------->
 
-
-        <!--------------------------Hero Banner-------------------------->
-
-        <div class="jumbotron" id="view">
-            <div class="container text-center white-text">
-                <div class="white-text text-center wow fadeInUp">
-                    <a href="product-overview-visor.html">
-                        <h2 id="hero-title">DELL VISOR</h2>
-                    </a>
-                </div>
-                <hr />
-                <div class="white-text text-center wow fadeInUp">
-                    <a href="product-overview-visor.html">
-                        <h3 id="hero-subtext">BROWSE PRODUCTS <i class="fas fa-angle-right mx-2" aria-hidden="true"></i></h3>
-                    </a>
-                </div>
+    <div class="jumbotron" id="view">
+        <div class="container text-center white-text">
+            <div class="white-text text-center wow fadeInUp">
+                <a href="product-overview-visor.html">
+                    <h2 id="hero-title">DELL VISOR</h2>
+                </a>
+            </div>
+            <hr />
+            <div class="white-text text-center wow fadeInUp">
+                <a href="product-overview-visor.html">
+                    <h3 id="hero-subtext">BROWSE PRODUCTS <i class="fas fa-angle-right mx-2" aria-hidden="true"></i>
+                    </h3>
+                </a>
             </div>
         </div>
-    </header>
+    </div>
 
     <!--------------------------Masonry Featured Products-------------------------->
 
@@ -96,9 +109,10 @@
                         <div class="hovereffect">
                             <img class="img-responsive" src="images/index-page-pictures/AlienwareHeader.png" alt="">
                             <div class="overlay">
-                                <h2>Alienware</h2>
+                                <h2 id="overlay-title">Alienware</h2>
                                 <p>
-                                    <a href="#" id="hero-subtext">BROWSE PRODUCTS <i class="fas fa-angle-right mx-2" aria-hidden="true"></i></a>
+                                    <a href="#" id="hero-subtext">BROWSE PRODUCTS <i class="fas fa-angle-right mx-2"
+                                            aria-hidden="true"></i></a>
                                 </p>
                             </div>
                         </div>
@@ -107,9 +121,10 @@
                         <div class="hovereffect">
                             <img class="img-responsive" src="images/index-page-pictures/AccessoriesHeader.png" alt="">
                             <div class="overlay">
-                                <h2>Accessories</h2>
+                                <h2 id="overlay-title">Accessories</h2>
                                 <p>
-                                    <a href="accessories.html" id="hero-subtext">BROWSE PRODUCTS <i class="fas fa-angle-right mx-2" aria-hidden="true"></i></a>
+                                    <a href="accessories.html" id="hero-subtext">BROWSE PRODUCTS <i
+                                            class="fas fa-angle-right mx-2" aria-hidden="true"></i></a>
                                 </p>
                             </div>
                         </div>
@@ -145,9 +160,6 @@
             </div>
             <div class="row" id="email-row">
                 <div class="col-md-8"></div>
-                <!-- <div class="col-md-2"></div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-2"></div> -->
                 <div class="col-md-2 align-self-center">
                     <input type="text" class="form-control" id="email-form" placeholder="Email Address">
                 </div>

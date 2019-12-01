@@ -52,6 +52,50 @@ body,
     height: 90%;
 }
 
+.breadcrumb-item a {
+    color: #080D20
+}
+
+/*--------------------------Universal Primary and Secondary Buttons--------------------------*/
+
+.btn-primary {
+    background: #080D20;
+    color: #fff;
+    font-size: 1.7em;
+    padding: 5px 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.btn-secondary {
+    background: none;
+    color: #080D20;
+    font-size: 1.7em;
+    padding: 5px 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    border: 1px solid #080D20;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #263F9B;
+    border-color: #080D20; /*set the color you want here*/
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open>.dropdown-toggle.btn-secondary {
+    color: #fff;
+    background-color: #263F9B;
+    border-color: #080D20; /*set the color you want here*/
+}
+
 /*--------------------------Main Navigation--------------------------*/
 
 .navbar {
@@ -141,6 +185,42 @@ body,
     margin-right: 5px;
 }
 
+.dropdown-menu {
+    background-color: #263F9B;
+    height: 8rem;
+}
+
+.dropdown-toggle[aria-expanded="true"]:after {
+    transform: rotate(180deg);
+  }
+  
+  
+/*for the animation*/
+.dropdown-toggle:after {
+    transition: 0.3s;
+}
+
+#navbarSupportedContent .dropdown-menu a {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+}
+
+#navbarSupportedContent .dropdown-menu a img {
+    height: 5rem;
+    width: auto;
+    padding-right: 1rem;
+    filter: invert(100%); 
+    -webkit-filter:invert(100%); 
+} 
+
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active, .dropdown-item.active, .open>.dropdown-toggle.dropdown-item {
+    color: #fff;
+    background-color: black;
+    border-color: none; /*set the color you want here*/
+}
+
 @media only screen and (max-width: 980px) {
     .nav-bar {
         height: 180px;
@@ -168,6 +248,9 @@ body,
     .menu-bar ul li .nomobile {
         display: none !important;
     }
+    .dropdown-menu {
+        height: 18rem;
+    }
 }
 
 /*--------------------------Breadcrumbs--------------------------*/
@@ -186,6 +269,10 @@ body,
 
 .breadcrumb li {
     font-size: 1.2rem;
+}
+
+.black-text {
+    color: #080D20;
 }
 
 .bc-icons-2 .breadcrumb-item+.breadcrumb-item::before {
@@ -252,17 +339,6 @@ body,
     border: 1px solid #080D20;
     border-radius: 4px;
     box-shadow: none;
-}
-
-#subscribe-btn {
-    background: #080D20;
-    color: white;
-    font-size: 1.5rem;
-    margin-left: 40px;
-    box-shadow: none;
-    width: 120px;
-    height: 40px;
-    border: none;
 }
 
 .footer .form-control::placeholder {
