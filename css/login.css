@@ -1,0 +1,20 @@
+/* This is the CSS for the Log In Page */
+
+/* Padding between the Nav Bar and the Login Cards */
+
+.padding-y {
+    padding-top: 100px;
+}
+
+.card-body {
+    padding: 15px;
+}
+/* 
+.row {
+    display: block;
+} */
+
+/* 
+#login-box {
+    border: 1px black;
+} */

@@ -4,11 +4,22 @@
     margin-top: 5%;
 }
 
-/* under tabs */
-.content {
+.tab-text {
+    font-weight: bold;
+    color: #9C9EA6;
+}
+
+#active {
+    color: #080D20;
+}
+
+/* under tabs general */
+.cart, .shipping {
     margin-top: 5%;
 }
 
+
+/* under cart */
 .table td {
     padding: .75rem;
     vertical-align: top;
@@ -21,11 +32,12 @@
 }
 
 
-.content img {
+.cart img {
     height: 160px;
     width: 218px;
 }
 
+    
 .form-control {
     width: 70%;
 }
@@ -43,10 +55,67 @@
 
 
 
-
-
-
 /* Order-summary (aside) */
 #order-summary {
-    border: 1px;
+    border: 1px solid #C6C6C6;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.order-summary {
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+
+
+/* shipping and payment */
+.form-inline {
+    border-bottom: none;
+}
+
+.edit-link {
+    color: #263F9B;
+    font-weight: bold;
+}
+
+
+/* order summary buttons (reuse of Buy-and Save) */
+
+.buy-save-bar {
+    display: flex;
+}
+
+.buy-save-bar .btn-primary {
+    background: #080D20;
+    color: #fff;
+    font-size: 1.7em;
+    padding: 5px 6rem;
+    margin-top: 2rem;
+    /* margin-right: 2rem; */
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    width: 122%;
+}
+
+.buy-save-bar .save-for-later {
+    
+    color: #080D20;
+    font-size: 1.7em;
+    padding: 5px 4rem;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    width: 122%;
+}
+
+@media only screen and (max-width: 980px) {
+    .buy-save-bar .btn-primary {
+        margin-left: 1rem;
+    }
 }
