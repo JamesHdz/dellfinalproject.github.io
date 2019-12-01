@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Shopping Cart Review</title>
+    <title>Shopping Cart - Cart</title>
     <link rel="icon" href="images/dell-logo.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -94,7 +94,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb white lighten-4">
                                 <li class="breadcrumb-item"><a class="black-text" href="index.html"><i
-                                    class="fas fa-angle-left mx-2" aria-hidden="true"></i>Back to Home</a></li>
+                                            class="fas fa-angle-left mx-2" aria-hidden="true"></i>Back to Home</a></li>
                             </ol>
                         </nav>
                     </div>
@@ -112,7 +112,7 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1">
-                    <p class="tab-text"> Cart</p>
+                    <p class="tab-text" id="active"> Cart</p>
                 </div>
                 <div class="col-md-2">
                     <hr>
@@ -134,7 +134,7 @@
                     <hr>
                 </div>
                 <div class="col-md-1">
-                    <p class="tab-text" id="active">
+                    <p class="tab-text">
                         Review
                     </p>
                 </div>
@@ -188,62 +188,6 @@
                                     </td>
                                 </tr>
 
-                                <tr>
-                                    <td class="product-image">
-                                        <img src="images/AdobeStock_255820896_Preview.png">
-                                    </td>
-                                    <td class="itemside">
-                                        <figcaption class="info">
-                                            <a href="#" class="title text-dark">
-                                                <h4>Item Name 123</h4>
-                                            </a>
-                                            <p class="details">Show product Details</p>
-                                        </figcaption>
-                                    </td>
-                                    <td class="quantity">
-                                        <select class="form-control">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                        Remove
-                                    </td>
-                                    <td id="end" class="total">
-                                        <div class="price-wrap">
-                                            <h4 class="price">$1156.00</h4>
-                                        </div> <!-- price-wrap .// -->
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="product-image">
-                                        <img src="images/AdobeStock_255820896_Preview.png">
-                                    </td>
-                                    <td class="itemside">
-                                        <figcaption class="info">
-                                            <a href="#" class="title text-dark">
-                                                <h4>Item Name 123</h4>
-                                            </a>
-                                            <p class="details">Show product Details</p>
-                                        </figcaption>
-                                    </td>
-                                    <td class="quantity">
-                                        <select class="form-control">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                        Remove
-                                    </td>
-                                    <td id="end" class="total">
-                                        <div class="price-wrap">
-                                            <h4 class="price">$1156.00</h4>
-                                        </div> <!-- price-wrap .// -->
-                                    </td>
-                                </tr>
-
                             </tbody>
                         </table>
 
@@ -261,6 +205,7 @@
                                 <p>Total price: </p>
                                 <p>Discount:</p>
                                 <p>Tax:</p>
+                                
                                 <br>
                                 <br>
                                 <br>
@@ -270,6 +215,7 @@
                                 <p class="text-right">USD 568</p>
                                 <p class="text-right">USD 658</p>
                                 <p class="text-right">USD 15</p>
+                               
                                 <br>
                                 <br>
                                 <br>
@@ -278,15 +224,16 @@
 
                         </div>
 
-                        <div class="buy-save-bar">
+                        <!-- <div class="buy-save-bar"> -->
                             <div class="row">
 
                                 <div class="col-md-12">
-                                    <a href="#" class="btn  btn-primary"> Review </a>
+                                    <a href="#" class="btn  btn-primary"> Proceed to Checkout </a>
+                                    <a href="#" class="btn  btn-secondary"> Continue Shopping </a>
                                     <p class="save-for-later"> Save for later </p>
                                 </div>
                             </div>
-                        </div>
+                        <!-- </div> -->
                     </div>
                 </aside> <!-- col.// -->
             </div>
@@ -295,92 +242,31 @@
         </div> <!-- container .//  -->
     </section>
 
-    <!------------------------SHIPPING------------------------>
-    <section class="shipping">
+    <!------------------------RECOMMENDED------------------------>
+
+
+    <section class="recommended">
         <div class="container">
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-7">
-
-
-                    <h2>Shipping</h2>
-
-
-                    <div class="form-inline">
-                        <span class=mr-md-auto>
-                            <p>Get it by Wednesday, December 11</p>
-                            <p>Standard Delivery</p>
-                        </span>
-
-                        <div class="edit">
-                            <p class="edit-link">Edit</p>
-                        </div>
-                    </div>
-
+                <div class="col-md-10">
                     <hr>
-                    <br>
+                    <div class="row">
 
-                    <div class="form-inline">
-                        <span class=mr-md-auto>
-                            <p>
-                                John Doe <br>
-                                XXXXXXX XXXX XXXX <br>
-                                XXXXX XX 12345
-                            </p>
-                            <br>
-                            <p>
-                                XXXXX@COM <br>
-                                XXX-XXX-XXXXX
-                            </p>
-                        </span>
-
-                        <div class="edit">
-                            <p class="edit-link">Edit</p>
-                        </div>
+                        <div class="col-md-3"><img src="images/AdobeStock_255820896_Preview.png"></div>
+                        <div class="col-md-3"><img src="images/AdobeStock_255820896_Preview.png"></div>
+                        <div class="col-md-3"><img src="images/AdobeStock_255820896_Preview.png"></div>
+                        <div class="col-md-3"><img src="images/AdobeStock_255820896_Preview.png"></div>
                     </div>
-
-                    <br>
-                    <br>
-
-                    <div class="form-inline">
-                        <span class=mr-md-auto>
-                            <h2>Payment</h2>
-                            <br>
-                            <p>
-                                John Doe <br>
-                                XXXXXXX XXXX XXXX <br>
-                                XXXXX XX 12345
-                            </p>
-                        </span>
-
-                        <div class="edit">
-                            <p class="edit-link">Edit</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <br>
-
-                    <div class="form-inline">
-                        <span class=mr-md-auto>
-                            <p>
-                                XXX-XXX-XXXX<br>
-                                XX/XX XXX
-                            </p>
-                        </span>
-                        <div class="edit">
-                            <p class="edit-link">Edit</p>
-                        </div>
-                    </div>
+                    <div class="col-md-1"></div>
 
 
 
                 </div>
-                <div class="col-md-3"></div>
-                <div class="col-md-1"></div>
             </div>
-        </div>
     </section>
+
+
 
     <!--------------------------Footer--------------------------DO NOT DELETE--->
     <section class="footer">
