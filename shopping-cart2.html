@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Shopping Cart Shipping</title>
+    <title>Shopping Cart2</title>
     <link rel="icon" href="images/dell-logo.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -112,15 +112,13 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1">
-                    <p class="tab-text"><a href="shopping-cart-cart.html">
-                            Cart </a>
-                    </p>
+                    <p class="tab-text" id="active"> Cart</p>
                 </div>
                 <div class="col-md-2">
                     <hr>
                 </div>
                 <div class="col-md-1">
-                    <p class="tab-text" id="active">
+                    <p class="tab-text">
                         Shipping
                     </p>
                 </div>
@@ -157,68 +155,74 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-1"></div>
+                <main class="col-md-7">
+                    <div class="card">
+
+                        <table class="table table-borderless table-shopping-cart">
+                            <tbody>
+                                <tr>
+                                    <td class="product-image">
+                                        <img src="images/Cart images/headset.png">
+                                    </td>
+                                    <td class="itemside">
+                                        <figcaption class="info">
+                                            <a href="#" class="title text-dark">
+                                                <h4>Visor Headset</h4>
+                                            </a>
+                                            <p class="details">Show product Details</p>
+                                        </figcaption>
+                                    </td>
+                                    <td class="quantity">
+                                        <select class="form-control" id="quantity">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                        Remove
+                                    </td>
+                                    <td id="end" class="total">
+                                        <div class="price-wrap total">
+                                            <h4 class="price">$1156.00</h4>
+                                        </div> <!-- price-wrap .// -->
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="product-image">
+                                        <img src="images/Cart images/Controllers.png">
+                                    </td>
+                                    <td class="itemside">
+                                        <figcaption class="info">
+                                            <a href="#" class="title text-dark">
+                                                <h4>Visor Controller</h4>
+                                            </a>
+                                            <p class="details">Show product Details</p>
+                                        </figcaption>
+                                    </td>
+                                    <td class="quantity">
+                                        <select class="form-control" id="quantity">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                        Remove
+                                    </td>
+                                    <td id="end" class="total">
+                                        <div class="price-wrap total">
+                                            <h4 class="price">$120.00</h4>
+                                        </div> <!-- price-wrap .// -->
+                                    </td>
+                                </tr>
 
 
-                <main class="col-md-6">
+                            </tbody>
+                        </table>
 
-                    <h2 id="shipping-speed">Shipping Speed</h2>
+                    </div> <!-- card.// -->
 
-                    <div class="form-inline">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1"></label>
-                        </div>
-                        <span class=mr-md-auto>
-                            <p class="delivery-date">Get it by Wednesday, December 11</p>
-                            <p class="delivery-type">Express Delivery</p>
-                        </span>
-
-                        <div class="edit">
-                            <p class="price-change">$9.00</p>
-                        </div>
-                    </div>
-
-                    <br>
-                    <br>
-
-                    <div class="form-inline">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1"></label>
-                        </div>
-                        <span class=mr-md-auto>
-                            <p class="delivery-date">Get it by Friday, December 13</p>
-                            <p class="delivery-type">Expedited Delivery</p>
-                        </span>
-
-                        <div class="edit">
-                            <p class="price-change">$5.00</p>
-                        </div>
-                    </div>
-
-                    <br>
-                    <br>
-
-                    <div class="form-inline">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1"></label>
-                        </div>
-                        <span class=mr-md-auto>
-                            <p class="delivery-date">Get it by Friday, December 15</p>
-                            <p class="delivery-type">Standard Delivery</p>
-                        </span>
-
-                        <div class="edit">
-                            <p class="price-change">Free</p>
-                        </div>
-                    </div>
-
-                    <br>
-
-                </main>
-
-                <div class="col-md-1"></div>
+                </main> <!-- col.// -->
 
                 <aside class="col-md-3">
                     <div class="container" id="order-summary">
@@ -230,102 +234,68 @@
                                 <p>Total price: </p>
                                 <p>Discount:</p>
                                 <p>Tax:</p>
+
                                 <br>
                                 <br>
                                 <br>
                                 <p>Total:</p>
                             </div>
                             <div class="col-md-6">
-                                <p class="text-right">USD $1945.00</p>
+                                <p class="text-right">USD $789.00</p>
                                 <p class="text-right">USD $120.00</p>
                                 <p class="text-right">USD $15.00</p>
+
                                 <br>
                                 <br>
                                 <br>
-                                <p class="text-right"><strong>USD $2,080</strong></p>
+                                <p class="text-right"><strong>USD $1,770</strong></p>
                             </div>
 
                         </div>
 
-                        <div class="buy-save-bar">
-                            <div class="row">
+                        <!-- <div class="buy-save-bar"> -->
+                        <div class="row">
 
-                                <div class="col-md-12">
-                                    <a href="shopping-cart-payment.html" class="btn  btn-primary"> Proceed to Payment
-                                    </a>
-                                    <p class="save-for-later"> Save for later </p>
-                                </div>
+                            <div class="col-md-12">
+                                <a href="shopping-cart-shipping.html" class="btn  btn-primary"> Proceed to Checkout </a>
+                                <a href="index.html" class="btn  btn-secondary"> Continue Shopping </a>
+                                <p class="save-for-later"> Save for later </p>
                             </div>
                         </div>
+                        <!-- </div> -->
                     </div>
                 </aside> <!-- col.// -->
-
-                <div class="col-md-1"></div>
             </div>
+            <div class="col-md-1"></div>
 
-            <div class="row">
-                <div class="col-md-1"></div>
-                <main class="col-md-6">
-
-                    <h2 id="shipping-address">Shipping Address</h2>
-
-                    <div class="container" id="no-padding">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>First Name</p>
-                                <input type="text" class="form-control" id="first-form" placeholder="XXXXXXXXXXXXXXX">
-                            </div>
-                            <div class="col-md-6">
-                                <p>Last name</p>
-                                <input type="text" class="form-control" id="last-form" placeholder="XXXXXXXXXXXXXXX">
-                            </div>
-                        </div>
-                    </div>
-
-                    <p>Address</p>
-                    <input type="text" class="form-control" id="address-form" placeholder="XXXXXXXXXXXXXXX">
-
-                    <div class="container" id="no-padding">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>City</p>
-                                <input type="text" class="form-control" id="first-form" placeholder="XXXXXXXXX">
-                            </div>
-                            <div class="col-md-2">
-                                <p>State</p>
-                                <input type="text" class="form-control" id="last-form" placeholder="XX">
-                            </div>
-                            <div class="col-md-4">
-                                <p>Zipcode</p>
-                                <input type="text" class="form-control" id="last-form" placeholder="XXXXX">
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <br>
-
-                    <p>Email Address</p>
-                    <input type="text" class="form-control" id="address-form" placeholder="XXXXXXX@email.com">
-
-                    <p>Phone Number</p>
-                    <input type="text" class="form-control" id="address-form" placeholder="XXXXXXXXX">
-
-
-                </main>
-
-                <div class="col-md-5"></div>
-
-            </div>
+        </div> <!-- container .//  -->
     </section>
 
-    </main> <!-- col.// -->
+    <!------------------------RECOMMENDED------------------------>
 
 
-    </div>
-    <div class="col-md-1"></div>
+    <section class="recommended">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <hr>
+                    <br>
+                    <h2>Recommended</h2>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3"><img src="images/Cart images/PC.png"></div>
+                        <div class="col-md-3"><img src="images/Cart images/Controllers.png"></div>
+                        <div class="col-md-3"><img
+                                src="images/search-results-page/ALIENWARE AREA-51 THREADRIPPER EDITION.png"></div>
+                        <div class="col-md-3"><img src="images/search-results-page/Alienware Headphones.png"></div>
+                    </div>
+                    <div class="col-md-1"></div>
 
-    </div> <!-- container .//  -->
+
+
+                </div>
+            </div>
     </section>
 
 
