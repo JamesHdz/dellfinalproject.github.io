@@ -1,3 +1,9 @@
+/* general */
+
+a{
+    color: #080D20
+}
+
 /* Tabs */
 
 .cart-tabs {
@@ -11,6 +17,7 @@
 
 #active {
     color: #080D20;
+    text-decoration: underline;
 }
 
 /* under tabs general */
@@ -156,4 +163,43 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 4%;
+}
+
+/* payment */
+
+
+
+#indi-row{
+    margin-top: 20%;
+}
+
+#card-row {
+    margin-top: 10%;
+}
+
+#box {
+    /* padding: 8%; */
+    border: 1px solid #C6C6C6;
+    height: 100px;
+}
+
+
+#credit-icons {
+    height: 30px;
+    width: 40px;
+    margin: 10%;
+}
+
+#payment-icons {
+    height: 40px;
+    width: 40px;
+    margin: 10%;
+    margin-top: 5%;
+}
+
+#payment-explanation {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 1%;
+    /* text-align: center; */
 }
