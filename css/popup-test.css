@@ -6,3 +6,11 @@
     padding: 5rem;
 }
 
+.modal-body {
+    color: #555;
+}
+
+.modal-body p {
+    font-size: 2rem;
+}
+
