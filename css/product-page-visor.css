@@ -1,3 +1,7 @@
+/*------- CSS for Visor Product Page ------*/
+
+/*------- Jumbotron ------*/
+
 #view {
     margin-top: 3%;
     background: url("../images/product-page-visor/dell-visor-banner.jpg") no-repeat center center;
@@ -6,4 +10,53 @@
 
 .jumbotron {
     height: 60rem;
+}
+
+/*------- Features Grid ------*/
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.features-item {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.features-item h3 {
+    font-weight: bold;
+}
+
+.features-item img {
+    height: auto;
+    width: 15rem;
+}
+
+.features-title, .alt-features-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #111;
+    margin: 16px 0 15px;
+}
+
+p, ol, ul, blockquote {
+    margin: 0 0 20px;
+}
+
+/*------- Visor Top View ------*/
+
+.visor-topview .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5%;
+}
+
+.visor-topview img {
+    height: auto;
+    width: 100%;
 }
