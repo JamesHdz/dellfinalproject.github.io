@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Shopping Cart</title>
+    <title>Shopping Cart_Review</title>
     <link rel="icon" href="images/dell-logo.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -77,44 +77,67 @@
                     <div class="bc-icons-2">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb white lighten-4">
-                                <li class="breadcrumb-item"><a class="black-text" href="index.html">Home</a><i
-                                        class="fas fa-angle-right mx-2" aria-hidden="true"></i></li>
-                                <li class="breadcrumb-item"><a class="black-text" href="#">VR Headsets</a><i
-                                        class="fas fa-angle-right mx-2" aria-hidden="true"></i></li>
-                                <li class="breadcrumb-item active">Dell Visor</li>
+                                <li class="breadcrumb-item"><a class="black-text" href="index.html"><i
+                                    class="fas fa-angle-left mx-2" aria-hidden="true"></i>Back to Home</a></li>
                             </ol>
                         </nav>
-                        <div style="height: 40px;"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+
     <!--------------------------Tabs-------------------------->
 
 
     <section class="cart-tabs">
+
         <div class="container">
             <div class="row">
-                <div class = "col-md-1"></div>
-                <div class = "col-md-1"><h4>Cart</h4></div>
-                <div class="col-md-2"> <hr> </div>
-                <div class = "col-md-1"><h4>Shipping</h4></div>
-                <div class="col-md-2"> <hr> </div>
-                <div class = "col-md-1"><h4>Payment</h4></div>
-                <div class="col-md-2"> <hr> </div>
-                <div class = "col-md-1"><h4>Review</h4></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1">
+                    <p class="tab-text"> Cart</p>
+                </div>
+                <div class="col-md-2">
+                    <hr>
+                </div>
+                <div class="col-md-1">
+                    <p class="tab-text">
+                        Shipping
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <hr>
+                </div>
+                <div class="col-md-1">
+                    <p class="tab-text">
+                        Payment
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <hr>
+                </div>
+                <div class="col-md-1">
+                    <p class="tab-text" id="active">
+                        Review
+                    </p>
+                </div>
                 <div class="col-md-1"></div>
             </div>
         </div>
+        </div>
+        </nav>
+
 
     </section>
 
+
     <!------------------------Content UNDER Tabs------------------------>
+    <!------------------------CART------------------------>
 
-
-    <section class="content">
+    <section class="cart">
         <div class="container">
             <div class="row">
                 <div class="col-md-1"></div>
@@ -213,29 +236,47 @@
                     </div> <!-- card.// -->
 
                 </main> <!-- col.// -->
-                <aside class="col-md-3" id="order-summary">
-                    <div class="card mb-3">
-                        <h2>Order Summary</h2>
-                    </div> <!-- card .// -->
-                    <div class="card">
-                        <div class="card-body">
-                            <dl class="dlist-align">
-                                <dt>Total price:</dt>
-                                <dd class="text-right">USD 568</dd>
-                            </dl>
-                            <dl class="dlist-align">
-                                <dt>Discount:</dt>
-                                <dd class="text-right">USD 658</dd>
-                            </dl>
-                            <dl class="dlist-align">
-                                <dt>Total:</dt>
-                                <dd class="text-right  h5"><strong>$1,650</strong></dd>
-                            </dl>
-                            <hr>
-                           
 
-                        </div> <!-- card-body.// -->
-                    </div> <!-- card .// -->
+                <aside class="col-md-3">
+                    <div class="container" id="order-summary">
+
+                        <h2 class="order-summary">Order Summary</h2>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Total price: </p>
+                                <p>Discount:</p>
+                                <p>Tax:</p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <p>Total:</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-right">USD 568</p>
+                                <p class="text-right">USD 658</p>
+                                <p class="text-right">USD 15</p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <p class="text-right"><strong>$1,650</strong></p>
+                            </div>
+
+                        </div>
+
+                        <div class="buy-save-bar">
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <a href="#" class="btn  btn-primary"> Review </a>
+                                    <p class="save-for-later"> Save for later </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </aside> <!-- col.// -->
             </div>
             <div class="col-md-1"></div>
@@ -243,9 +284,95 @@
         </div> <!-- container .//  -->
     </section>
 
-    </div>
-    </div>
+    <!------------------------SHIPPING------------------------>
+    <section class="shipping">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+
+
+                    <h2>Shipping</h2>
+
+
+                    <div class="form-inline">
+                        <span class=mr-md-auto>
+                            <p>Get it by Wednesday, December 11</p>
+                            <p>Standard Delivery</p>
+                        </span>
+
+                        <div class="edit">
+                            <p class="edit-link">Edit</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <br>
+
+                    <div class="form-inline">
+                        <span class=mr-md-auto>
+                            <p>
+                                John Doe <br>
+                                XXXXXXX XXXX XXXX <br>
+                                XXXXX XX 12345
+                            </p>
+                            <br>
+                            <p>
+                                XXXXX@COM <br>
+                                XXX-XXX-XXXXX
+                            </p>
+                        </span>
+
+                        <div class="edit">
+                            <p class="edit-link">Edit</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="form-inline">
+                        <span class=mr-md-auto>
+                            <h2>Payment</h2>
+                            <br>
+                            <p>
+                                John Doe <br>
+                                XXXXXXX XXXX XXXX <br>
+                                XXXXX XX 12345
+                            </p>
+                        </span>
+
+                        <div class="edit">
+                            <p class="edit-link">Edit</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <br>
+
+                    <div class="form-inline">
+                        <span class=mr-md-auto>
+                            <p>
+                                XXX-XXX-XXXX<br>
+                                XX/XX XXX
+                            </p>
+                        </span>
+                        <div class="edit">
+                            <p class="edit-link">Edit</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
     </section>
+
+
+
 
 
     <!--------------------------Footer--------------------------DO NOT DELETE--->
