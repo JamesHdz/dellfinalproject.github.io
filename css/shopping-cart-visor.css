@@ -60,6 +60,16 @@ a{
     border-top: none;
 }
 
+.info  {
+    margin-top: 30%;
+}
+
+#quantity {
+    margin-top: 95%;
+}
+.total {
+    margin-top: 55%;
+}
 
 
 /* Order-summary (aside) */
