@@ -68,7 +68,7 @@
     </header>
 
 
-    <!--------------------------- Log In Form ---------------------------->
+    <!-- ------------------------- Log In Form --------------------------
     <section class="section-content padding-y bg">
         <div class="container">
             <div class="row">
@@ -102,28 +102,91 @@
             </aside>
         </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!--------------------------- Practice ---------------------------->
     <section class="test padding-y">
         <div class="container">
             <div class="row">
-                <div class="col-md-1"></div>
+                <div class="col-md-1">abc</div>
                 <div class="col-md-10">
                     <div class="container">
                         <div class="row">
-                            <aside class="col-md-6">
+                            <aside class="col-md-6" id="box-left">
 
-                                <div class="container" style="border:1px solid #cecece" ;>
+                                <div class="container" id="test">
                                     <div class="row">
                                         <div class="col-md-1"></div>
                                         <div class="col-md-10">
                                             <article class="card-body">
                                                 <header class="mb-4">
-                                                    <h1 class="card-title">Log Into Your Account</h1>
+                                                    <h1 class="card-title">Log into your Account</h1>
                                                 </header>
                                                 <form>
+                                                    <div class="form-row">
+                                                        <div class="col form-group">
+                                                            <label>Email</label>
+                                                            <input type="text" class="form-control" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col form-group LogInPwd">
+                                                            <label>Password</label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group LogInBtn">
+                                                        <a href="#" class="btn  btn-primary"> Login </a>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="customCheck1">
+                                                                <label class="custom-control-label"
+                                                                for="customCheck1">Remember
+                                                                Me</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <a href="#" class="ForgetPwd">Forget Password?</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </article>
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <aside class="col-md-6" id="box-right">
+
+                                <div class="container" id="test">
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10">
+                                            <article class="card-body">
+                                                <header class="mb-4">
+                                                    <h1 class="card-title">Create an Account</h1>
+                                                </header>
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="col form-group">
+                                                            <label>First Name</label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="First Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col form-group">
+                                                            <label>Last Name</label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Last Name">
+                                                        </div>
+                                                    </div>
                                                     <div class="form-row">
                                                         <div class="col form-group">
                                                             <label>Email</label>
@@ -137,6 +200,15 @@
                                                                 placeholder="Password">
                                                         </div>
                                                     </div>
+                                                    <div class="form-group">
+                                                        <a href="#" class="btn  btn-primary"> Create Account </a>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">Clicking
+                                                            Create Account, you agree to Dell’s Terms of sale</label>
+                                                    </div>
                                                 </form>
                                             </article>
                                         </div>
@@ -144,13 +216,18 @@
                                     </div>
                                 </div>
                             </aside>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-md-1">abc</div>
             </div>
         </div>
     </section>
+
+
+
+
 
 
     <!--------------------------Footer-------------------------->
