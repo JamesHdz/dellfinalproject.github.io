@@ -1,3 +1,5 @@
+/*------ CSS for Shopping Cart -------*/
+
 /* general */
 
 a{
@@ -212,4 +214,26 @@ a{
     margin-bottom: 10%;
     margin-left: 1%;
     /* text-align: center; */
+}
+
+/*------ Error Modal -------*/
+
+.modal-title {
+    font-size: 4.2rem;
+}
+
+.modal-content {
+    padding: 5rem;
+}
+
+.modal-body {
+    color: #555;
+}
+
+.modal-body p {
+    font-size: 2rem;
+}
+
+.modal-footer {
+    justify-content: flex-start;
 }
