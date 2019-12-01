@@ -64,7 +64,7 @@
 
 .order-summary {
     margin-top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 
 
@@ -82,40 +82,43 @@
 
 /* order summary buttons (reuse of Buy-and Save) */
 
-.buy-save-bar {
-    display: flex;
-}
 
-.buy-save-bar .btn-primary {
-    background: #080D20;
-    color: #fff;
-    font-size: 1.7em;
-    padding: 5px 6rem;
-    margin-top: 2rem;
-    /* margin-right: 2rem; */
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
-    width: 122%;
-}
 
-.buy-save-bar .save-for-later {
-    
-    color: #080D20;
-    font-size: 1.7em;
-    padding: 5px 4rem;
-    margin-top: 5%;
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
+.cart .btn-primary {
     display: flex;
     justify-content: center;
-    width: 122%;
+    margin-right: 0rem !important;
 }
+
+/* .cart .btn-secondary {
+    display: flex;
+    justify-content: center;
+    margin-right: 0rem !important;
+}
+
+
+.save-for-later {
+    display: flex;
+    justify-content: center;
+    margin-right: 0rem !important;
+    margin-top: 5%;
+} */
 
 @media only screen and (max-width: 980px) {
     .buy-save-bar .btn-primary {
         margin-left: 1rem;
     }
 }
+
+
+/* recommended */
+
+.recommended {
+    margin-top: 5%;
+}
+
+.recommended img {
+    height: 160px;
+    width: 207px;
+}
+
