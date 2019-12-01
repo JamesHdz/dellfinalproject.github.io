@@ -57,6 +57,14 @@
     .jumbotron .container hr {
         width: 68%;
     }
+
+    #hero-title {
+        font-size: 10rem;
+    }
+
+    #overlay-title {
+        font-size: 6rem;
+    }
 }
 
 /*--------------------------Landing Masonry Featured Products--------------------------*/

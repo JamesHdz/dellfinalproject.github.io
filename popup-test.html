@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/popup-test.css">
     
 
     <!-- Font Stylesheets -->
@@ -39,16 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <span class="sr-only">(current)</span></a>
-                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                  </div>
+                        <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Support</a>
@@ -75,8 +67,6 @@
         </div>
     </nav>
 
-    
-
     <!--------------------------Breadcrumbs--------------------------DO NOT DELETE--->
 
     <section class="breadcrumbs">
@@ -100,45 +90,49 @@
         </div>
     </section>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">LOGO</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown position-static">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-            </ul></div>
-          </nav>
-
     <!--------------------------Product Overview-------------------------->
 
     <!-- Below is a placeholder container. Please your element inside and change section name and col length to what you need -->
 
-    <section class="PLACE NAME">
+    <section class="popup-test">
         <div class="container">
             <div class="row">
-                <div class="col-md-x">
-                    
+                <div class="col-md-12">
+                    <div class="alert alert-dark alert-dismissible fade show">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Dark!</strong> Dark grey alert.
+                      </div>
                 </div>
-                <div class="col-md-x">
-                    
             </div>
         </div>
     </section>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Payment Error</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Check your <strong>zip code</strong> to make sure it matches the billing address</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
 
 
     <!--------------------------Footer--------------------------DO NOT DELETE--->
