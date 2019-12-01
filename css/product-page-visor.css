@@ -12,6 +12,18 @@
     height: 60rem;
 }
 
+.jumbotron .btn-primary {
+    font-size: 3rem;
+    padding: 5px 8rem;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+    box-shadow: 0 3px 5px grey;
+}
+
 /*------- Features Grid ------*/
 
 .row {

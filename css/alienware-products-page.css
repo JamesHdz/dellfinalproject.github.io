@@ -1,5 +1,3 @@
-
-
 #accessories-hero {
     height: 400px;
     /* background-color: #ededee; */
@@ -11,7 +9,6 @@
     width: 100%;
     object-fit: cover;
 }
-
 
 .accessories-products {
     height: auto;
@@ -35,11 +32,6 @@
     margin-right: none;
 }
 
-/* .accessories-products .col-md-2 {
-    padding-left: none !important;
-    padding-right: none !important;
-} */
-
 .single_product_top img {
     height: 180px;
     width: 100%;
@@ -52,5 +44,5 @@
 }
 
 h3 {
-font-size: 1.5em
+    font-size: 1.5em
 }
