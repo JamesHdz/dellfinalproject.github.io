@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/popup-test.css">
-    
+
 
     <!-- Font Stylesheets -->
 
@@ -55,7 +55,16 @@
             </div>
             <div class="menu-bar">
                 <ul>
-                    <li><a href="search_results.html"><i class="fas fa-search"></i></a></li>
+                    <div class="container h-100">
+                        <div class="d-flex justify-content-center h-100">
+                            <div class="searchbar">
+                                <input class="search_input" type="text" name="" placeholder="Search...">
+                                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <li><a href="search_results.html"><i class="fas fa-search"></i></a></li> -->
                     <li id="account"><a href="#"><i class="fas fa-user"></i>
                             <section class="nomobile">Sign In</section>
                         </a></li>
@@ -90,6 +99,38 @@
         </div>
     </section>
 
+    <div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/ModalWindowEffects/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=15599"><span>Back to the Codrops Article</span></a></span>
+			</div>
+			<header>
+				<h1>Expanding Search Bar Deconstructed <span>A click-to-expand search input</span></h1>
+			</header>
+			<div class="main clearfix">
+				<!-- Optional columns for small components -->
+				<div class="column">
+					<p>The search bar can be opened on click, it has a fluid width and it's mobile-friendly.</p>
+					<p><a href="http://tympanus.net/codrops/?p=15599">Read the tutorial</a></p>
+				</div>
+				<div class="column">
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/uisearch.js"></script>
+		<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
+
     <!--------------------------Product Overview-------------------------->
 
     <!-- Below is a placeholder container. Please your element inside and change section name and col length to what you need -->
@@ -101,38 +142,38 @@
                     <div class="alert alert-dark alert-dismissible fade show">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong>Dark!</strong> Dark grey alert.
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Payment Error</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Check your <strong>zip code</strong> to make sure it matches the billing address</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Back</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
 
-    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Payment Error</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Check your <strong>zip code</strong> to make sure it matches the billing address</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
 
 
     <!--------------------------Footer--------------------------DO NOT DELETE--->
@@ -177,6 +218,12 @@
     </section>
 
     <!--------------------------Scripts--------------------------DO NOT DELETE--->
+
+    <script src="js/classie.js"></script>
+		<script src="js/uisearch.js"></script>
+		<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
