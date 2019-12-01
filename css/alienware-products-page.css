@@ -1,33 +1,33 @@
-#accessories-hero {
+#alienware-hero {
     height: 400px;
     /* background-color: #ededee; */
     margin-top: 50px;
 }
 
-#accessories-hero img {
+#alienware-hero img {
     height: 400px;
     width: 100%;
     object-fit: cover;
 }
 
-.accessories-products {
+.alienware-products {
     height: auto;
     margin-top: 5%;
     margin-bottom: 15%;
 }
 
-#acc_products_row {
+#alien_products_row {
     display: flex;
     justify-content: center;
     margin-top: 5%;
 }
 
-#acc_single_product {
+#alien_single_product {
     height: 237px;
     margin-right: 45px;
 }
 
-#acc_single_product5 {
+#alien_single_product5 {
     height: 237px;
     margin-right: none;
 }
@@ -45,4 +45,13 @@
 
 h3 {
     font-size: 1.5em
+}
+
+h5 {
+    font-weight: lighter;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
 }
