@@ -193,27 +193,54 @@ a{
     /* padding: 8%; */
     border: 1px solid #C6C6C6;
     height: 100px;
+    width: 100%;
 }
 
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+} 
 
 #credit-icons {
     height: 30px;
-    width: 40px;
-    margin: 10%;
+    width: 100px;
+    margin-top: 5%;
 }
 
 #payment-icons {
     height: 40px;
-    width: 40px;
-    margin: 10%;
+    width: 100px;
     margin-top: 5%;
+    
 }
 
 #payment-explanation {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 1%;
     /* text-align: center; */
+}
+
+#hidden-form {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 4%;
+    display:none;
+}
+
+#hidden-input {
+    display: none;
+}
+
+
+.form-check-input {
+    margin-top: 6px;
+}
+
+.radiospace {
+    width: 100%;
+    margin-left:1rem;
+    margin-bottom: 5%;
 }
 
 /*------ Error Modal -------*/
