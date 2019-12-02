@@ -1,3 +1,5 @@
+/*--- CSS for Hidden Form Fills ---*/
+
 #hidden-form {  
     display: initial;
 }
@@ -7,3 +9,6 @@
     display: initial;
 }
 
+.billing-address .form-control {
+    border: 1.5px solid lightgreen;
+}

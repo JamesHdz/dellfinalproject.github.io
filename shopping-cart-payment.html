@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/shopping-cart-visor.css">
+    <link rel="stylesheet" href="css/shopping-cart-payment.css">
 
     <!-- Font Stylesheets -->
 
@@ -263,8 +263,7 @@
                             <div class="row">
 
                                 <div class="col-md-12">
-                                    <a href="" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal"
-                                        type="review">
+                                    <a href="" class="btn  btn-primary" type="review">
                                         Review </a>
                                     <p class="save-for-later"> Save for later </p>
                                 </div>
@@ -272,32 +271,6 @@
                         </div>
                     </div>
                 </aside> <!-- col.// -->
-
-                <!----------------------- Modal ----------------------->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Payment Error</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Please enter a valid <strong>zip code</strong>.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="shopping-cart-payment2.html"><button type="button"
-                                        class="btn btn-primary">Back</button></a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- </div> -->
-
-
 
                 <div class="col-md-1"></div>
             </div>
@@ -335,7 +308,7 @@
                                         </label>
 
                                         <input type="text" class="form-control" id="validationCustom01"
-                                            placeholder="John" >
+                                            placeholder="John">
                                         <div class="invalid-feedback">
                                             Please provide your first name.
                                         </div>
@@ -345,7 +318,7 @@
                                             <p>Last Name</p>
                                         </label>
                                         <input type="text" class="form-control" id="validationCustom02"
-                                            placeholder="Doe" >
+                                            placeholder="Doe">
                                         <div class="invalid-feedback">
                                             Please provide your last name.
                                         </div>
@@ -397,10 +370,35 @@
                                     </div>
 
                                 </div>
-                                <button class="btn btn-primary" type="submit">Add Address</button>
+                                <button class="btn btn-primary" id="add-address" data-toggle="modal"
+                                    data-target="#exampleModal" type="submit"><a href="shopping-cart-payment-2.html">Add
+                                        Address</a></button>
                             </div>
                         </div>
                     </form>
+
+                    <!----------------------- Modal ----------------------->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Payment Error</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Please enter a valid <strong>zip code</strong>.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Back</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
 
                 </main>
 
@@ -483,6 +481,8 @@
             $("#hidden-input").toggle();
         });
     </script>
+
+    <!-- Form Fill Validation js -->
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
