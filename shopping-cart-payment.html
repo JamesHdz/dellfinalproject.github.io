@@ -173,7 +173,7 @@
 
                             <div class="col-md-4 no-gutter">
                                 <button type="button" id="box">
-                                    <img src="images/payment icons/Finance-2.png" id="payment-icons">            
+                                    <img src="images/payment icons/Finance-2.png" id="payment-icons">
                                 </button>
                             </div>
 
@@ -185,7 +185,7 @@
 
                             <div class="col-md-4 no-gutter">
                                 <button type="button" id="box">
-                                    <img src="images/payment icons/Paypal-2.png" id="payment-icons">                       
+                                    <img src="images/payment icons/Paypal-2.png" id="payment-icons">
                                 </button>
                             </div>
 
@@ -263,7 +263,8 @@
                             <div class="row">
 
                                 <div class="col-md-12">
-                                    <a href="" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    <a href="" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal"
+                                        type="review">
                                         Review </a>
                                     <p class="save-for-later"> Save for later </p>
                                 </div>
@@ -289,6 +290,7 @@
                             <div class="modal-footer">
                                 <a href="shopping-cart-payment2.html"><button type="button"
                                         class="btn btn-primary">Back</button></a>
+
                             </div>
                         </div>
                     </div>
@@ -329,13 +331,11 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <p>First Name</p>
-                                    <input type="text" class="form-control" id="first-form"
-                                        placeholder="John">
+                                    <input type="text" class="form-control" id="first-form" placeholder="John">
                                 </div>
                                 <div class="col-md-6">
                                     <p>Last name</p>
-                                    <input type="text" class="form-control" id="last-form"
-                                        placeholder="Doe">
+                                    <input type="text" class="form-control" id="last-form" placeholder="Doe">
                                 </div>
                             </div>
                         </div>
@@ -356,6 +356,14 @@
                                 <div class="col-md-4">
                                     <p>Zipcode</p>
                                     <input type="text" class="form-control" id="last-form" placeholder="1234">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationCustom05">Zip</label>
+                                    <input type="text" class="form-control" id="validationCustom05" placeholder="Zip"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid zip.
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -437,11 +445,12 @@
         });
     </script>
 
-<script>
+    <script>
         $("#gridRadios2").click(function () {
             $("#hidden-input").toggle();
         });
     </script>
+
 
 
 
