@@ -265,3 +265,11 @@ a{
 .modal-footer {
     justify-content: flex-start;
 }
+
+.zipcode .form-control {
+    border: 2px solid red;
+}
+
+.grnfill .form-control {
+    border: 2px solid green;
+}
