@@ -310,14 +310,14 @@
                     <h2 id="shipping-address">Billing Address</h2>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
-                            >
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
                         <label class="form-check-label" for="gridRadios1">
                             <p class="radiospace">Same as Shipping Address</p>
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" checked>
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"
+                            checked>
                         <label class="form-check-label" for="gridRadios2">
                             <p class="radiospace">Enter New Address</p>
                         </label>
@@ -343,30 +343,33 @@
                             <input type="text" class="form-control" id="address-form" placeholder="XXXXXXXXXXXXXXX">
                         </div>
 
-                        <div class="container" id="no-padding">
-                            <div class="row">
-                                <div class="col-md-6 grnfill">
-                                    <p>City</p>
-                                    <input type="text" class="form-control" id="first-form" placeholder="XXXXXXXXX">
+                        <form class="needs-validation" novalidate>
+                            <div class="container" id="no-padding">
+                                <div class="row">
+                                    <div class="col-md-6 grnfill">
+                                        <p>City</p>
+                                        <input type="text" class="form-control" id="first-form" placeholder="XXXXXXXXX">
+                                    </div>
+                                    <div class="col-md-2 grnfill">
+                                        <p>State</p>
+                                        <input type="text" class="form-control" id="last-form" placeholder="XX">
+                                    </div>
+                                    <div class="col-md-4 zipcode">
+                                        <p>Zipcode</p>
+                                        <a href="shopping-cart-payment3.html"><input type="text" class="form-control"
+                                                id="last-form" placeholder="1234"></a>
+                                    </div>
+
                                 </div>
-                                <div class="col-md-2 grnfill">
-                                    <p>State</p>
-                                    <input type="text" class="form-control" id="last-form" placeholder="XX">
-                                </div>
-                                <div class="col-md-4 zipcode">
-                                    <p>Zipcode</p>
-                                    <a href="shopping-cart-payment3.html"><input type="text" class="form-control"
-                                            id="last-form" placeholder="1234"></a>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
-
-                </main>
-
-                <div class="col-md-5"></div>
-
             </div>
+
+            </main>
+
+            <div class="col-md-5"></div>
+
+        </div>
 
     </section>
 
@@ -443,6 +446,9 @@
             $("#hidden-input").toggle();
         });
     </script>
+
+
+  
 
 
 

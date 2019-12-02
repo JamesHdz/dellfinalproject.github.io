@@ -165,7 +165,9 @@ a{
     margin-top: 5%;
 }
 
-#address-form, #first-form, #last-form {
+#validationCustom01, #validationCustom02, #validationCustom03, 
+#validationCustom04, #validationCustom05, #validationCustom06, 
+#card-form, #address-form, #first-form, #last-form {
     width: 100%;
     height: 40px;
     margin-bottom: 4%;
