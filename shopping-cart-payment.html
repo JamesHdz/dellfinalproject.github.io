@@ -208,18 +208,18 @@
 
                         <div class="container">
                             <p>Card Number</p>
-                            <input type="text" class="form-control" id="address-form" placeholder="XXXXXXXXXXXXXXX">
+                            <input type="text" class="form-control" id="card-form" placeholder="XXXXXXXXXXXXXXX">
                         </div>
 
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
                                     <p>Expiration Date</p>
-                                    <input type="text" class="form-control" id="first-form" placeholder="XXXXXXXXX">
+                                    <input type="text" class="form-control" id="card-form" placeholder="XXXXXXXXX">
                                 </div>
                                 <div class="col-md-2">
                                     <p>CVV</p>
-                                    <input type="text" class="form-control" id="last-form" placeholder="XX">
+                                    <input type="text" class="form-control" id="card-form" placeholder="XX">
                                 </div>
                                 <div class="col-md-4"> </div>
                             </div>
@@ -325,49 +325,82 @@
                     </div>
 
 
+                    <form class="needs-validation" novalidate>
+                        <div class="container" id="hidden-input">
+                            <div class="container" id="no-padding">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="validationCustom01">
+                                            <p>First Name</p>
+                                        </label>
 
-                    <div class="container" id="hidden-input">
-                        <div class="container" id="no-padding">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p>First Name</p>
-                                    <input type="text" class="form-control" id="first-form" placeholder="John">
-                                </div>
-                                <div class="col-md-6">
-                                    <p>Last name</p>
-                                    <input type="text" class="form-control" id="last-form" placeholder="Doe">
-                                </div>
-                            </div>
-                        </div>
-
-                        <p>Address</p>
-                        <input type="text" class="form-control" id="address-form" placeholder="XXXXXXXXXXXXXXX">
-
-                        <div class="container" id="no-padding">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p>City</p>
-                                    <input type="text" class="form-control" id="first-form" placeholder="XXXXXXXXX">
-                                </div>
-                                <div class="col-md-2">
-                                    <p>State</p>
-                                    <input type="text" class="form-control" id="last-form" placeholder="XX">
-                                </div>
-                                <div class="col-md-4">
-                                    <p>Zipcode</p>
-                                    <input type="text" class="form-control" id="last-form" placeholder="1234">
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label for="validationCustom05">Zip</label>
-                                    <input type="text" class="form-control" id="validationCustom05" placeholder="Zip"
-                                        required>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid zip.
+                                        <input type="text" class="form-control" id="validationCustom01"
+                                            placeholder="John" >
+                                        <div class="invalid-feedback">
+                                            Please provide your first name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="validationCustom02">
+                                            <p>Last Name</p>
+                                        </label>
+                                        <input type="text" class="form-control" id="validationCustom02"
+                                            placeholder="Doe" >
+                                        <div class="invalid-feedback">
+                                            Please provide your last name.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <label for="validationCustom03">
+                                <p>Address</p>
+                            </label>
+                            <input type="text" class="form-control" id="validationCustom03"
+                                placeholder="XXXXXXXXXXXXXXX">
+                            <div class="invalid-feedback">
+                                Please provide an Address.
+                            </div>
+
+                            <div class="container" id="no-padding">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="validationCustom04">
+                                            <p>City</p>
+                                        </label>
+                                        <input type="text" class="form-control" id="validationCustom04"
+                                            placeholder="XXXXXXXXX">
+                                        <div class="invalid-feedback">
+                                            Please provide a City.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="validationCustom05">
+                                            <p>State</p>
+                                        </label>
+                                        <input type="text" class="form-control" id="validationCustom05"
+                                            placeholder="XX">
+                                        <div class="invalid-feedback">
+                                            Please provide a State.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label for="validationCustom06">
+                                            <p>Zip Code</p>
+                                        </label>
+                                        <input type="text" class="form-control" id="validationCustom06"
+                                            placeholder="Zip" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button class="btn btn-primary" type="submit">Add Address</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
 
                 </main>
 
@@ -451,7 +484,26 @@
         });
     </script>
 
-
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 
 
 
