@@ -29,15 +29,19 @@ Base font size is 10px = 1rem
 p {
     font-size: 1.6rem;
 }
-h1{
+
+h1 {
     font-size: 3rem;
 }
+
 h2 {
     font-size: 2.5rem;
 }
+
 h3 {
     font-size: 2rem;
 }
+
 h4 {
     font-size: 1.8rem;
 }
@@ -84,16 +88,26 @@ body,
     box-shadow: none;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #263F9B;
-    border-color: #080D20; /*set the color you want here*/
+    border-color: #080D20;
+    /*set the color you want here*/
 }
 
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open>.dropdown-toggle.btn-secondary {
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.open>.dropdown-toggle.btn-secondary {
     color: #fff;
     background-color: #263F9B;
-    border-color: #080D20; /*set the color you want here*/
+    border-color: #080D20;
+    /*set the color you want here*/
 }
 
 /*--------------------------Main Navigation--------------------------*/
@@ -192,13 +206,15 @@ body,
 .dropdown-menu {
     background-color: #263F9B;
     height: 8rem;
+    padding: 1rem 0 !important;
+    top: 90%;
 }
 
 .dropdown-toggle[aria-expanded="true"]:after {
     transform: rotate(180deg);
-  }
-  
-  
+}
+
+
 /*for the animation*/
 .dropdown-toggle:after {
     transition: 0.3s;
@@ -215,14 +231,19 @@ body,
     height: 5rem;
     width: auto;
     padding-right: 1rem;
-    filter: invert(100%); 
-    -webkit-filter:invert(100%); 
-} 
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
 
-.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active, .dropdown-item.active, .open>.dropdown-toggle.dropdown-item {
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active,
+.dropdown-item.active,
+.open>.dropdown-toggle.dropdown-item {
     color: #fff;
     background-color: black;
-    border-color: none; /*set the color you want here*/
+    border-color: none;
+    /*set the color you want here*/
 }
 
 @media only screen and (max-width: 980px) {
@@ -252,8 +273,13 @@ body,
     .menu-bar ul li .nomobile {
         display: none !important;
     }
+
     .dropdown-menu {
-        height: 18rem;
+        height: 25rem;
+    }
+
+    #navbarSupportedContent .dropdown-menu a {
+        margin: 1rem
     }
 }
 
