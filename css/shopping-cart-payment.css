@@ -75,11 +75,11 @@ a{
 
 
 /* Order-summary (aside) */
-#order-summary {
+/* #order-summary {
     border: 1px solid #C6C6C6;
     position: sticky;
     position: -webkit-sticky;
-}
+} */
 
 .order-summary {
     margin-top: 10%;
@@ -282,4 +282,26 @@ a{
 #add-address a {
     color: white;
     text-decoration: none;
+}
+
+.fixed
+{
+  position: fixed;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #C6C6C6;
+  width: 100%;
+  left: 0;
+  /* text-align: center; */
+  z-index: 2;
+}
+
+.inside-container
+{
+  top: 30%;
+  z-index: 3;
+  left: 58%;
+  height: auto;
+  width: auto;
+  overflow: auto;
 }
