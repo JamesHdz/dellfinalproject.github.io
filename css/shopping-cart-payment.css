@@ -73,20 +73,12 @@ a{
     margin-top: 55%;
 }
 
-
-/* Order-summary (aside) */
-/* #order-summary {
-    border: 1px solid #C6C6C6;
-    position: sticky;
-    position: -webkit-sticky;
-} */
+/* Order Summary */
 
 .order-summary {
     margin-top: 10%;
     margin-bottom: 15%;
 }
-
-
 
 /* shipping and payment */
 .form-inline {
@@ -133,7 +125,7 @@ a{
 /* recommended */
 
 .recommended {
-    margin-top: 5%;
+    margin-top: 20%;
 }
 
 .recommended img {
@@ -284,6 +276,8 @@ a{
     text-decoration: none;
 }
 
+/* Order Summary Fixed */
+
 .fixed
 {
   position: fixed;
@@ -298,10 +292,25 @@ a{
 
 .inside-container
 {
-  top: 30%;
+  top: auto;
+  bottom: auto;
   z-index: 3;
   left: 58%;
   height: auto;
   width: auto;
   overflow: auto;
 }
+
+#order-summary {
+    left: 63%;
+}
+
+input[type="text"] {
+    color: #000 !important;
+    font-size: 1.8rem;
+}
+
+input::placeholder {
+    font-size: 1.8rem;
+    font-style: italic;
+  }

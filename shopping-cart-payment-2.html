@@ -234,7 +234,7 @@
                 <div class="col-md-1"></div>
 
                 <aside class="col-md-3">
-                    <div class="container" id="order-summary">
+                    <div class="container fixed inside-container" id="order-summary">
 
                         <h2 class="order-summary">Order Summary</h2>
 
@@ -281,109 +281,111 @@
 
             <!----------------------- Billing Address ----------------------->
             <section class="billing-address">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <main class="col-md-6">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <main class="col-md-6">
 
-                    <h2 id="shipping-address">Billing Address</h2>
+                        <h2 id="shipping-address">Billing Address</h2>
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
-                            checked>
-                        <label class="form-check-label" for="gridRadios1">
-                            <p class="radiospace">Same as Shipping Address</p>
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
-                            <p class="radiospace">Enter New Address</p>
-                        </label>
-                    </div>
-
-
-                    <form class="needs-validation" novalidate>
-                        <div class="container" id="hidden-input">
-                            <div class="container" id="no-padding">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="validationCustom01">
-                                            <p>First Name</p>
-                                        </label>
-
-                                        <input type="text" class="form-control" id="validationCustom01"
-                                            placeholder="John" >
-                                        <div class="invalid-feedback">
-                                            Please provide your first name.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="validationCustom02">
-                                            <p>Last Name</p>
-                                        </label>
-                                        <input type="text" class="form-control" id="validationCustom02"
-                                            placeholder="Doe" >
-                                        <div class="invalid-feedback">
-                                            Please provide your last name.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <label for="validationCustom03">
-                                <p>Address</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                <p class="radiospace">Same as Shipping Address</p>
                             </label>
-                            <input type="text" class="form-control" id="validationCustom03"
-                                placeholder="XXXXXXXXXXXXXXX">
-                            <div class="invalid-feedback">
-                                Please provide an Address.
-                            </div>
-
-                            <div class="container" id="no-padding">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="validationCustom04">
-                                            <p>City</p>
-                                        </label>
-                                        <input type="text" class="form-control" id="validationCustom04"
-                                            placeholder="XXXXXXXXX">
-                                        <div class="invalid-feedback">
-                                            Please provide a City.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <label for="validationCustom05">
-                                            <p>State</p>
-                                        </label>
-                                        <input type="text" class="form-control" id="validationCustom05"
-                                            placeholder="XX">
-                                        <div class="invalid-feedback">
-                                            Please provide a State.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <label for="validationCustom06">
-                                            <p>Zip Code</p>
-                                        </label>
-                                        <input type="text" class="form-control" id="validationCustom06"
-                                            placeholder="12345" required>
-                                        <div class="invalid-feedback">
-                                            Please provide a valid zip.
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <button class="btn btn-primary" id="add-address"><a href="#">Address Added</a></button>
-                            </div>
                         </div>
-                    </form>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                <p class="radiospace">Enter New Address</p>
+                            </label>
+                        </div>
 
-                </main>
 
-                <div class="col-md-5"></div>
+                        <form class="needs-validation" novalidate>
+                            <div class="container" id="hidden-input">
+                                <div class="container" id="no-padding">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="validationCustom01">
+                                                <p>First Name</p>
+                                            </label>
 
-            </div>
+                                            <input type="text" class="form-control" id="validationCustom01"
+                                                placeholder="John">
+                                            <div class="invalid-feedback">
+                                                Please provide your first name.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom02">
+                                                <p>Last Name</p>
+                                            </label>
+                                            <input type="text" class="form-control" id="validationCustom02"
+                                                placeholder="Doe">
+                                            <div class="invalid-feedback">
+                                                Please provide your last name.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <label for="validationCustom03">
+                                    <p>Address</p>
+                                </label>
+                                <input type="text" class="form-control" id="validationCustom03"
+                                    placeholder="XXXXXXXXXXXXXXX">
+                                <div class="invalid-feedback">
+                                    Please provide an Address.
+                                </div>
+
+                                <div class="container" id="no-padding">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="validationCustom04">
+                                                <p>City</p>
+                                            </label>
+                                            <input type="text" class="form-control" id="validationCustom04"
+                                                placeholder="XXXXXXXXX">
+                                            <div class="invalid-feedback">
+                                                Please provide a City.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label for="validationCustom05">
+                                                <p>State</p>
+                                            </label>
+                                            <input type="text" class="form-control" id="validationCustom05"
+                                                placeholder="XX">
+                                            <div class="invalid-feedback">
+                                                Please provide a State.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label for="validationCustom06">
+                                                <p>Zip Code</p>
+                                            </label>
+                                            <input type="text" class="form-control" id="validationCustom06"
+                                                placeholder="12345" required>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid zip.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="btn btn-primary" id="add-address"><a href="#">Address
+                                            Added</a></button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </main>
+
+                    <div class="col-md-5"></div>
+
+                </div>
             </section>
 
     </section>
