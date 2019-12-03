@@ -1,0 +1,279 @@
+/*------ CSS for Shopping Cart -------*/
+
+/* general */
+
+a{
+    color: #080D20
+}
+
+/* Tabs */
+
+.cart-tabs {
+    margin-top: 5%;
+}
+
+.tab-text {
+    font-weight: bold;
+    color: #9C9EA6;
+}
+
+#active {
+    color: #080D20;
+    text-decoration: underline;
+}
+
+/* under tabs general */
+.cart, .shipping {
+    margin-top: 5%;
+}
+
+
+/* under cart */
+.table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-bottom: 1px solid #dee2e6;
+    border-top: none;
+}
+
+.product-image {
+    width: 200px;
+}
+
+
+.cart img {
+    height: 160px;
+    width: 218px;
+}
+
+    
+.form-control {
+    width: 80%;
+}
+
+.price-wrap {
+    text-align: right;
+}
+
+.table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-bottom: 1px solid #dee2e6;
+    border-top: none;
+}
+
+.info  {
+    margin-top: 30%;
+}
+
+#quantity {
+    margin-top: 70%;
+}
+
+.total {
+    margin-top: 55%;
+}
+
+
+/* Order-summary (aside) */
+#order-summary {
+    border: 1px solid #C6C6C6;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.order-summary {
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+
+
+/* shipping and payment */
+.form-inline {
+    border-bottom: none;
+}
+
+.edit-link {
+    color: #263F9B;
+    font-weight: bold;
+}
+
+
+/* order summary buttons (reuse of Buy-and Save) */
+
+
+
+.cart .btn-primary {
+    display: flex !important;
+    justify-content: center;
+    margin-right: 0rem !important;
+}
+
+.cart .btn-secondary {
+    display: flex !important;
+    justify-content: center;
+    margin-right: 0rem !important;
+}
+
+
+.save-for-later {
+    display: flex;
+    justify-content: center;
+    margin-right: 0rem !important;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 980px) {
+    .buy-save-bar .btn-primary {
+        margin-left: 1rem;
+    }
+}
+
+
+/* recommended */
+
+.recommended {
+    margin-top: 5%;
+}
+
+.recommended img {
+    height: 160px;
+    width: 207px;
+}
+
+/* Shipping */
+
+
+#shipping-speed {
+    margin-bottom: 5%;
+}
+
+.delivery-date {
+    font-weight: bold;
+}
+
+.delivery-type {
+    font-style: italic;
+}
+
+.price-change {
+    color: #555555
+}
+
+#shipping-address {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#validationCustom01, #validationCustom02, #validationCustom03, 
+#validationCustom04, #validationCustom05, #validationCustom06, 
+#card-form, #address-form, #first-form, #last-form {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 4%;
+}
+
+#no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 4%;
+}
+
+/* payment */
+
+
+
+#indi-row{
+    margin-top: 20%;
+}
+
+#card-row {
+    margin-top: 10%;
+}
+
+#box {
+    /* padding: 8%; */
+    border: 1px solid #C6C6C6;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px 2px 5px #C6C6C6;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+} 
+
+#credit-icons {
+    height: 30px;
+    width: 100px;
+    margin-top: 5%;
+}
+
+#payment-icons {
+    height: 40px;
+    width: 100px;
+    margin-top: 5%;
+    
+}
+
+#payment-explanation {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 1%;
+    /* text-align: center; */
+}
+
+#hidden-form {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 4%;
+    display:none;
+}
+
+#hidden-input {
+    display: none;
+    margin-top: 5%;
+}
+
+
+.form-check-input {
+    margin-top: 6px;
+}
+
+.radiospace {
+    width: 100%;
+    margin-left:1rem;
+    margin-bottom: 5%;
+}
+
+/*------ Error Modal -------*/
+
+.modal-title {
+    font-size: 4.2rem;
+}
+
+.modal-content {
+    padding: 5rem;
+}
+
+.modal-body {
+    color: #555;
+}
+
+.modal-body p {
+    font-size: 2rem;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+
+.zipcode .form-control {
+    border: 2px solid red;
+}
+
+.grnfill .form-control {
+    border: 2px solid green;
+}
