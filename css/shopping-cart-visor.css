@@ -67,7 +67,7 @@ a{
 }
 
 #quantity {
-    margin-top: 70%;
+    margin-top: 70% !important;
 }
 
 .total {
@@ -181,8 +181,6 @@ a{
 }
 
 /* payment */
-
-
 
 #indi-row{
     margin-top: 20%;
