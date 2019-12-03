@@ -243,10 +243,16 @@ a{
 
 .modal-title {
     font-size: 4.2rem;
+    margin-top: 4rem;
 }
 
 .modal-content {
     padding: 5rem;
+}
+
+.close {
+    font-size: 3rem;
+    font-weight: 350;
 }
 
 .modal-body {
