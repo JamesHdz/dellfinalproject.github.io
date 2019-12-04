@@ -94,3 +94,13 @@
     height: 205px;
     width: 259px;
 }
+
+input[type="text"] {
+    color: #000 !important;
+    font-size: 1.8rem;
+}
+
+input::placeholder {
+    font-size: 1.8rem;
+    font-style: italic;
+  }

@@ -311,7 +311,7 @@ a{
     left: 63%;
 }
 
-input[type="text"] {
+/* input[type="text"] {
     color: #000 !important;
     font-size: 1.8rem;
 }
@@ -319,4 +319,4 @@ input[type="text"] {
 input::placeholder {
     font-size: 1.8rem;
     font-style: italic;
-  }
+  } */
