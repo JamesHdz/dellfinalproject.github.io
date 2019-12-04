@@ -189,3 +189,28 @@
         margin-left: 1rem;
     }
 }
+
+/*--------------------------Accordion Dropdowns--------------------------*/
+
+#myaccordion h3 {
+    padding-top: .5rem;
+}
+
+#myaccordion .fas {
+    padding-top: .5rem;
+    float: right;
+    font-size: 1.3rem;
+}
+
+#myaccordion ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.animate-icon {
+    transition: 0.4s;
+}
+
+.rotate {
+    transform:rotate(45deg);
+}
