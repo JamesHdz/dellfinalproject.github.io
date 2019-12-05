@@ -369,16 +369,26 @@ body,
     border: 1px solid #080D20;
     border-radius: 4px;
     box-shadow: none;
+    width: 100%;
 }
 
 .footer .form-control::placeholder {
     color: #080D20;
 }
 
-#email-row {
+#subscribe-btn {
+    padding: 5px 4rem;
+}
+
+.footer-row {
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+/* #email-row {
     margin-top: 30px;
     margin-bottom: 30px;
-}
+} */
 
 @media only screen and (max-width: 980px) {
     #subscribe-btn {
