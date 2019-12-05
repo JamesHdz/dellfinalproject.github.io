@@ -4,12 +4,16 @@
 
 #view {
     margin-top: 3%;
-    background: url("../images/product-page-visor/dell-visor-banner.jpg") no-repeat center center;
+    background: url("../images/product-page-visor/dell-visor-banner-gr.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .jumbotron {
     height: 60rem;
+}
+
+.jumbotron img {
+    filter: brightness(50%);
 }
 
 .jumbotron .btn-primary {
@@ -22,6 +26,16 @@
     -ms-transform: translate(-50%, -50%);
     cursor: pointer;
     box-shadow: 0 3px 5px grey;
+}
+
+#hero-title {
+    color: white;
+    font-size: 12rem;
+}
+
+#hero-subtext {
+    color: white;
+    font-size: 3rem;
 }
 
 /*------- Features Grid ------*/
