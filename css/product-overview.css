@@ -105,6 +105,22 @@
     }
 }
 
+/*--------------------------Stars and Reviews--------------------------*/
+
+.single-space {
+    height: 3rem;
+}
+
+.stars-reviews {
+    display: block;
+}
+
+.stars-reviews .number-reviews {
+    display: inline-block;
+    padding-top: 1.2%;
+    padding-left: 2%;
+}
+
 /*--------------------------Tab Titles--------------------------*/
 
 .single-product .nav-tabs a {

@@ -106,3 +106,25 @@
     height: 205px;
     width: 259px;
 }
+
+.price-wrap span {
+    font-size: 1.6rem;
+}
+
+/*--------------------------Stars and Reviews--------------------------*/
+
+.single-space {
+    height: 3rem;
+}
+
+.stars-reviews {
+    display: block;
+    font-size: 1.4rem;
+}
+
+.stars-reviews .number-reviews {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-top: 1.2%;
+    padding-left: 2%;
+}
