@@ -95,6 +95,10 @@ a{
     font-weight: bold;
 }
 
+.edit {
+    margin-right: 15%;
+}
+
 
 /* order summary buttons (reuse of Buy-and Save) */
 
@@ -315,9 +319,9 @@ a{
   overflow: auto;
 }
 
-#summary {
+/* #summary {
     left: 70%;
-}
+} */
 
 /* input[type="text"] {
     color: #000 !important;
