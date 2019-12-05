@@ -48,7 +48,7 @@ a{
 
     
 .form-control {
-    width: 70%;
+    width: 100%;
 }
 
 .price-wrap {
@@ -73,6 +73,11 @@ a{
     margin-top: 55%;
 }
 
+.details {
+    font-size: 1.4rem;
+}
+
+
 /* Order Summary */
 
 .order-summary {
@@ -93,7 +98,9 @@ a{
 
 /* order summary buttons (reuse of Buy-and Save) */
 
-
+.removeword {
+    color: white;
+}
 
 .cart .btn-primary {
     display: flex !important;
@@ -113,6 +120,7 @@ a{
     justify-content: center;
     margin-right: 0rem !important;
     margin-top: 5%;
+    color: #ccc;
 }
 
 @media only screen and (max-width: 980px) {
@@ -307,6 +315,16 @@ a{
   overflow: auto;
 }
 
-#order-summary {
-    left: 63%;
+#summary {
+    left: 70%;
 }
+
+/* input[type="text"] {
+    color: #000 !important;
+    font-size: 1.8rem;
+}
+
+input::placeholder {
+    font-size: 1.8rem;
+    font-style: italic;
+  } */
