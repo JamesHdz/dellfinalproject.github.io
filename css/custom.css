@@ -101,6 +101,7 @@ input[type="text"] {
 }
 
 input::placeholder {
+    color: #9C9EA6 !important;
     font-size: 1.8rem;
     font-style: italic;
   }
