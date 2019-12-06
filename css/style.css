@@ -76,7 +76,7 @@ body,
 }
 
 .btn-secondary {
-    background: none;
+    background: #fff;
     color: #080D20;
     font-size: 1.7em;
     padding: 5px 4rem;
