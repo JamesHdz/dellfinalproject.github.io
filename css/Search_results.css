@@ -5,8 +5,8 @@
 }
 
 .breadcrumb {
-    background-color: rgb(255, 255, 255) ;
-    padding: 0.75rem 0rem ;
+    background-color: rgb(255, 255, 255);
+    padding: 0.75rem 0rem;
 }
 
 .fa-chevron-left {
@@ -17,7 +17,7 @@
 
 /* SIDE FILTERS */
 
-.icon-control{ 
+.icon-control {
     float: right;
 }
 
@@ -28,15 +28,15 @@
 
 .filter-title {
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-    padding:  .4rem 0rem;
+    padding: .4rem 0rem;
 }
 
 .card {
-    box-shadow: none ;
-    border-width: initial ;
-    border-style: none ;
-    border-color: initial ;
-    border-image: initial ;
+    box-shadow: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
 }
 
 .card-body {
@@ -44,18 +44,19 @@
 }
 
 #card-header {
-    background-color: rgb(255, 255, 255) ;
+    background-color: rgb(255, 255, 255);
     font-weight: bold;
-    border-bottom: none ;
+    border-bottom: none;
     padding-top: 2rem;
 }
+
 /* 
 .card-body {
     padding-top: .6rem;
 } */
 
 .custom-control {
-    padding-bottom: 0.7rem ;
+    padding-bottom: 0.7rem;
     padding-left: none;
 }
 
@@ -63,17 +64,19 @@
     padding-left: 1rem;
     font-size: 1.4rem;
 }
+
 .range-control {
-    display: flex ;
+    display: flex;
     padding-left: none;
 }
+
 #range-form {
-    width: 105px ;
+    width: 105px;
     margin-right: 2.3rem;
     /* margin-top: .7rem; */
     margin-bottom: 1rem;
-    margin-left: none ;
-    border-radius: 2px ;
+    margin-left: none;
+    border-radius: 2px;
 }
 
 /* MAIN SQUEEZE */
@@ -88,7 +91,7 @@
 }
 
 #btn-list {
-    box-shadow: none ;
+    box-shadow: none;
 }
 
 
@@ -99,7 +102,7 @@
 /* cards */
 
 .card-product-list {
-    margin-top: 30px ; 
+    margin-top: 30px;
 }
 
 .img-search-result {
