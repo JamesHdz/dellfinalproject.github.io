@@ -43,6 +43,10 @@
     font-size: 3rem;
 }
 
+.ex2 #hero-subtext:hover, .ex2 #hero-subtext:active {
+    font-size: 3.5rem;
+}
+
 @media only screen and (min-width: 2496px) {
     #view {
         margin-top: 2%;
