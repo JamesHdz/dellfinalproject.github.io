@@ -127,6 +127,11 @@ a{
     color: #ccc;
 }
 
+#review-order {
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+}
+
 @media only screen and (max-width: 980px) {
     .buy-save-bar .btn-primary {
         margin-left: 1rem;
@@ -319,16 +324,14 @@ a{
   overflow: auto;
 }
 
-/* #summary {
-    left: 70%;
-} */
 
-/* input[type="text"] {
-    color: #000 !important;
+
+#pay-form-fill input::placeholder {
     font-size: 1.8rem;
+    color: #000 !important;
 }
 
-input::placeholder {
+.hidden-fill input::placeholder {
     font-size: 1.8rem;
-    font-style: italic;
-  } */
+    color: #000 !important;
+}

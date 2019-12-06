@@ -100,6 +100,11 @@ input[type="text"] {
     font-size: 1.8rem;
 }
 
+input[type="password"] {
+    color: #000 !important;
+    font-size: 1.8rem;
+}
+
 input::placeholder {
     color: #9C9EA6 !important;
     font-size: 1.8rem;

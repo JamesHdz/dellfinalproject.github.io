@@ -71,13 +71,13 @@
                 </div>
                 <div class="menu-bar">
                     <ul>
-                        <li id="account"><a href="search_results.html"><i class="fas fa-search"></i>
+                        <li id="account"><a href="#"><i class="fas fa-search"></i>
                                 <section class="nomobile">Search</section>
                             </a></li>
-                        <li id="account"><a href="login.html"><i class="fas fa-user"></i>
-                                <section class="nomobile">Sign In</section>
+                        <li id="account"><a href="#"><i class="fas fa-user"></i>
+                                <section class="nomobile">Alex S</section>
                             </a></li>
-                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><img src="images/shopping-cart/cart3.png"></a></li>
                         <li><img src="images/flagicon.png"></li>
                     </ul>
                 </div>
@@ -206,28 +206,29 @@
 
                     <br>
                     <br>
+                    <section class="hidden-fill">
+                        <div class="container" id="hidden-form">
 
-                    <div class="container" id="hidden-form">
+                            <div class="container">
+                                <p>Card Number</p>
+                                <input type="text" class="form-control" id="card-form" placeholder="xxxxxxxxxx">
+                            </div>
 
-                        <div class="container">
-                            <p>Card Number</p>
-                            <input type="text" class="form-control" id="card-form" placeholder="XXXXXXXXXXXXXXX">
-                        </div>
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p>Expiration Date</p>
-                                    <input type="text" class="form-control" id="card-form" placeholder="XXXXXXXXX">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>Expiration Date</p>
+                                        <input type="text" class="form-control" id="card-form" placeholder="xxxxxxxx">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>CVV</p>
+                                        <input type="text" class="form-control" id="card-form" placeholder="xxx">
+                                    </div>
+                                    <div class="col-md-4"> </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <p>CVV</p>
-                                    <input type="text" class="form-control" id="card-form" placeholder="XX">
-                                </div>
-                                <div class="col-md-4"> </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
                     <hr>
 
@@ -267,8 +268,9 @@
                         <div class="row">
 
                             <div class="col-md-12">
-                                <a href="shopping-cart-review.html" class="btn  btn-primary"> Review Order </a>
-                                <a href="index.html" class="btn  btn-secondary"> Continue Shopping </a>
+                                <a href="shopping-cart-review.html" class="btn  btn-primary" id="review-order"> Review
+                                    Order </a>
+                                <a href="#" class="btn  btn-secondary"> Continue Shopping </a>
                                 <p class="save-for-later"> Save for later </p>
                             </div>
                         </div>
@@ -283,7 +285,7 @@
 
 
             <!----------------------- Billing Address ----------------------->
-            <section class="billing-address">
+            <section class="billing-address" id="pay-form-fill">
                 <div class="row">
                     <div class="col-md-1"></div>
                     <main class="col-md-6">
@@ -315,8 +317,8 @@
                                                 <p>First Name</p>
                                             </label>
 
-                                            <input type="text" class="form-control" id="validationCustom01"
-                                                placeholder="John">
+                                            <input type="text" class="form-control pay-form-fill"
+                                                id="validationCustom01" placeholder="Alex">
                                             <div class="invalid-feedback">
                                                 Please provide your first name.
                                             </div>
@@ -326,7 +328,7 @@
                                                 <p>Last Name</p>
                                             </label>
                                             <input type="text" class="form-control" id="validationCustom02"
-                                                placeholder="Doe">
+                                                placeholder="S">
                                             <div class="invalid-feedback">
                                                 Please provide your last name.
                                             </div>
